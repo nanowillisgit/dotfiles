@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Opens sxiv in lower left corner. Intended for use to set wallpapers
+
+bspc rule -a Sxiv --one-shot state=floating monitor=HDMI-A-0 rectangle=650x500+30+540 
+sxiv -qbt /home/aatmun/Pictures/wall/* &
