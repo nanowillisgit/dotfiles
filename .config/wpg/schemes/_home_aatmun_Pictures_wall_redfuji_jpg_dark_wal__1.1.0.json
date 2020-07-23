@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/redfuji.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#15191b",
+        "foreground": "#ccd4d4",
+        "cursor": "#ccd4d4"
+    },
+    "colors": {
+        "color0": "#15191b",
+        "color1": "#9A8971",
+        "color2": "#2E578E",
+        "color3": "#376095",
+        "color4": "#4C6F9A",
+        "color5": "#817F84",
+        "color6": "#708BA6",
+        "color7": "#ccd4d4",
+        "color8": "#8e9494",
+        "color9": "#9A8971",
+        "color10": "#2E578E",
+        "color11": "#376095",
+        "color12": "#4C6F9A",
+        "color13": "#817F84",
+        "color14": "#708BA6",
+        "color15": "#ccd4d4"
+    }
+}

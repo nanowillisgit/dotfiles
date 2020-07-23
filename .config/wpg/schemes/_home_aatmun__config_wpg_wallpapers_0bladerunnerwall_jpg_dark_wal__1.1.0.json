@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/0bladerunnerwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#312d36",
+        "foreground": "#e4ecff",
+        "cursor": "#e4ecff"
+    },
+    "colors": {
+        "color0": "#312d36",
+        "color1": "#ff3144",
+        "color2": "#ff5966",
+        "color3": "#5797ff",
+        "color4": "#859aff",
+        "color5": "#e398ff",
+        "color6": "#9dbdff",
+        "color7": "#c9d9ff",
+        "color8": "#676f7f",
+        "color9": "#ff5464",
+        "color10": "#ff5e6a",
+        "color11": "#92bbff",
+        "color12": "#a1b0ff",
+        "color13": "#ebb3ff",
+        "color14": "#b7ceff",
+        "color15": "#e4ecff"
+    }
+}

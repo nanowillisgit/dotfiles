@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/outsunwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#211d1f",
+        "foreground": "#f4aead",
+        "cursor": "#f4aead"
+    },
+    "colors": {
+        "color0": "#211d1f",
+        "color1": "#B04C52",
+        "color2": "#BB5762",
+        "color3": "#D55156",
+        "color4": "#F45B5A",
+        "color5": "#F2615F",
+        "color6": "#D55963",
+        "color7": "#f4aead",
+        "color8": "#aa7979",
+        "color9": "#f46a71",
+        "color10": "#f97580",
+        "color11": "#ff8993",
+        "color12": "#ff7e7d",
+        "color13": "#ff928c",
+        "color14": "#ff6e7e",
+        "color15": "#f4aead"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/japan_night.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#2f2636",
+        "foreground": "#fff5ff",
+        "cursor": "#fff5ff"
+    },
+    "colors": {
+        "color0": "#2f2636",
+        "color1": "#da6a6f",
+        "color2": "#d470dc",
+        "color3": "#ffa83d",
+        "color4": "#8c55d5",
+        "color5": "#e868d6",
+        "color6": "#54c8fc",
+        "color7": "#704b64",
+        "color8": "#731cff",
+        "color9": "#f8a0a5",
+        "color10": "#f59cfc",
+        "color11": "#ffd786",
+        "color12": "#ba8cf7",
+        "color13": "#ff9ef1",
+        "color14": "#b3efff",
+        "color15": "#fff5ff"
+    }
+}

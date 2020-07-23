@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/beach-seasidewall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#07192D",
+        "foreground": "#e7a8bd",
+        "cursor": "#e7a8bd"
+    },
+    "colors": {
+        "color0": "#07192D",
+        "color1": "#063E81",
+        "color2": "#154C87",
+        "color3": "#2B508D",
+        "color4": "#3A659F",
+        "color5": "#5E5289",
+        "color6": "#955487",
+        "color7": "#e7a8bd",
+        "color8": "#a17584",
+        "color9": "#063E81",
+        "color10": "#154C87",
+        "color11": "#2B508D",
+        "color12": "#3A659F",
+        "color13": "#5E5289",
+        "color14": "#955487",
+        "color15": "#e7a8bd"
+    }
+}

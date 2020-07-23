@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/capsulewall.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1e100f",
+        "foreground": "#e8decb",
+        "cursor": "#e8decb"
+    },
+    "colors": {
+        "color0": "#1e100f",
+        "color1": "#AC8C58",
+        "color2": "#E2BC57",
+        "color3": "#D1A967",
+        "color4": "#7F6B99",
+        "color5": "#B1A195",
+        "color6": "#CFB48E",
+        "color7": "#e8decb",
+        "color8": "#a29b8e",
+        "color9": "#AC8C58",
+        "color10": "#E2BC57",
+        "color11": "#D1A967",
+        "color12": "#7F6B99",
+        "color13": "#B1A195",
+        "color14": "#CFB48E",
+        "color15": "#e8decb"
+    }
+}

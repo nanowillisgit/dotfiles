@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/samuraistreetwall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#120b0d",
+        "foreground": "#ddd0cd",
+        "cursor": "#ddd0cd"
+    },
+    "colors": {
+        "color0": "#120b0d",
+        "color1": "#394A40",
+        "color2": "#4D4E4D",
+        "color3": "#69665A",
+        "color4": "#96635A",
+        "color5": "#867D7B",
+        "color6": "#AD9967",
+        "color7": "#ddd0cd",
+        "color8": "#9a918f",
+        "color9": "#394A40",
+        "color10": "#4D4E4D",
+        "color11": "#69665A",
+        "color12": "#96635A",
+        "color13": "#867D7B",
+        "color14": "#AD9967",
+        "color15": "#ddd0cd"
+    }
+}

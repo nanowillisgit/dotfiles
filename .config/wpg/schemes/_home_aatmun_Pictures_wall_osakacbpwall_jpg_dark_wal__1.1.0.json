@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/osakacbpwall.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c121c",
+        "foreground": "#dccfe0",
+        "cursor": "#dccfe0"
+    },
+    "colors": {
+        "color0": "#0c121c",
+        "color1": "#1F5599",
+        "color2": "#5A619F",
+        "color3": "#4067CA",
+        "color4": "#B15BC2",
+        "color5": "#549DD0",
+        "color6": "#A19DDF",
+        "color7": "#dccfe0",
+        "color8": "#9a909c",
+        "color9": "#1F5599",
+        "color10": "#5A619F",
+        "color11": "#4067CA",
+        "color12": "#B15BC2",
+        "color13": "#549DD0",
+        "color14": "#A19DDF",
+        "color15": "#dccfe0"
+    }
+}

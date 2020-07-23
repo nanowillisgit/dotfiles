@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/marathonmornings.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#100a0c",
+        "foreground": "#dae0d9",
+        "cursor": "#dae0d9"
+    },
+    "colors": {
+        "color0": "#100a0c",
+        "color1": "#75B9AC",
+        "color2": "#A2B0A2",
+        "color3": "#B6BDB5",
+        "color4": "#91CBA4",
+        "color5": "#BAC9B6",
+        "color6": "#C8CFB7",
+        "color7": "#dae0d9",
+        "color8": "#989c97",
+        "color9": "#75B9AC",
+        "color10": "#A2B0A2",
+        "color11": "#B6BDB5",
+        "color12": "#91CBA4",
+        "color13": "#BAC9B6",
+        "color14": "#C8CFB7",
+        "color15": "#dae0d9"
+    }
+}

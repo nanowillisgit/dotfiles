@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/futurecitywall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#323244",
+        "foreground": "#c6e2f6",
+        "cursor": "#c6e2f6"
+    },
+    "colors": {
+        "color0": "#323244",
+        "color1": "#1C476E",
+        "color2": "#2D4674",
+        "color3": "#B93A5C",
+        "color4": "#2E5A98",
+        "color5": "#4561B1",
+        "color6": "#CD6590",
+        "color7": "#9bc7e7",
+        "color8": "#6c8ba1",
+        "color9": "#4575a1",
+        "color10": "#485e86",
+        "color11": "#e36a8a",
+        "color12": "#6088bf",
+        "color13": "#7991d5",
+        "color14": "#ec95b9",
+        "color15": "#c6e2f6"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/sakurabranch.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#110f0f",
+        "foreground": "#dee8e9",
+        "cursor": "#dee8e9"
+    },
+    "colors": {
+        "color0": "#110f0f",
+        "color1": "#ACD8D7",
+        "color2": "#B7D6D6",
+        "color3": "#C6D8DA",
+        "color4": "#F5D8CF",
+        "color5": "#C8E1DE",
+        "color6": "#CDDDE1",
+        "color7": "#dee8e9",
+        "color8": "#9ba2a3",
+        "color9": "#ACD8D7",
+        "color10": "#B7D6D6",
+        "color11": "#C6D8DA",
+        "color12": "#F5D8CF",
+        "color13": "#C8E1DE",
+        "color14": "#CDDDE1",
+        "color15": "#dee8e9"
+    }
+}

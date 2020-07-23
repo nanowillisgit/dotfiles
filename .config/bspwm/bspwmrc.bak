@@ -1,0 +1,62 @@
+#! /bin/sh
+
+col0=#15191b
+col1=#9A8971
+col2=#2E578E
+col3=#376095
+col4=#4C6F9A
+col5=#817F84
+col6=#708BA6
+col7=#ccd4d4
+col8=#8e9494
+col9=#9A8971
+col10=#2E578E
+col11=#376095
+col12=#4C6F9A
+col13=#817F84
+col14=#708BA6
+col15=#ccd4d4
+colinac=#464548
+colact=#676569
+
+setupmonitors &
+compton &
+sxhkd &
+
+wal -R
+piactl background enable
+
+if pgrep -x dunst
+then
+	killall -q dunst
+	dunst &
+else
+	dunst &
+fi
+if pgrep -x polybar
+then	
+	echo "Bars running"
+else
+	polybar top -c ~/.config/polybar/config &
+	polybar two -c ~/.config/polybar/config &
+fi
+
+bspc monitor HDMI-A-0 -d I II III IV V
+bspc monitor DisplayPort-1 -d VI VII VIII IX X
+
+bspc config normal_border_color "$colinac"
+bspc config focused_border_color "$col2"
+
+bspc config border_width         4
+bspc config window_gap          20
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+## Window Rules
+bspc rule -a Zathura state=tiled
+bspc rule -a Transmission-gtk desktop=X
+
+## Window swallowing
+## pidof bspswallow || bspswallow &

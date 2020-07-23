@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/white-flowerswall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1e2e28",
+        "foreground": "#dfebef",
+        "cursor": "#dfebef"
+    },
+    "colors": {
+        "color0": "#1e2e28",
+        "color1": "#A4CAB2",
+        "color2": "#8EB9C9",
+        "color3": "#9DCAD8",
+        "color4": "#AED0D6",
+        "color5": "#B4D8E7",
+        "color6": "#C6DBE1",
+        "color7": "#dfebef",
+        "color8": "#9ca4a7",
+        "color9": "#A4CAB2",
+        "color10": "#8EB9C9",
+        "color11": "#9DCAD8",
+        "color12": "#AED0D6",
+        "color13": "#B4D8E7",
+        "color14": "#C6DBE1",
+        "color15": "#dfebef"
+    }
+}

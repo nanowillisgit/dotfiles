@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/animegirlwall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#311e27",
+        "foreground": "#ece1ef",
+        "cursor": "#ece1ef"
+    },
+    "colors": {
+        "color0": "#311e27",
+        "color1": "#AA8B9E",
+        "color2": "#D4AEBB",
+        "color3": "#AFA7DC",
+        "color4": "#D1B4DE",
+        "color5": "#FBD2D0",
+        "color6": "#CFCDFB",
+        "color7": "#ece1ef",
+        "color8": "#a59da7",
+        "color9": "#AA8B9E",
+        "color10": "#D4AEBB",
+        "color11": "#AFA7DC",
+        "color12": "#D1B4DE",
+        "color13": "#FBD2D0",
+        "color14": "#CFCDFB",
+        "color15": "#ece1ef"
+    }
+}

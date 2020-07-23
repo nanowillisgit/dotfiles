@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/raidenwall.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#02050A",
+        "foreground": "#dff4f3",
+        "cursor": "#dff4f3"
+    },
+    "colors": {
+        "color0": "#02050A",
+        "color1": "#4B7888",
+        "color2": "#338DA1",
+        "color3": "#579BA7",
+        "color4": "#65C2CC",
+        "color5": "#8BB7B9",
+        "color6": "#A0DBDC",
+        "color7": "#dff4f3",
+        "color8": "#9caaaa",
+        "color9": "#4B7888",
+        "color10": "#338DA1",
+        "color11": "#579BA7",
+        "color12": "#65C2CC",
+        "color13": "#8BB7B9",
+        "color14": "#A0DBDC",
+        "color15": "#dff4f3"
+    }
+}

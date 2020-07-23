@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/sakuraforest.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a1214",
+        "foreground": "#e2dee2",
+        "cursor": "#e2dee2"
+    },
+    "colors": {
+        "color0": "#0a1214",
+        "color1": "#A1758A",
+        "color2": "#C67898",
+        "color3": "#A9969F",
+        "color4": "#CBA0AE",
+        "color5": "#BBB7C4",
+        "color6": "#D0B7C7",
+        "color7": "#e2dee2",
+        "color8": "#9e9b9e",
+        "color9": "#A1758A",
+        "color10": "#C67898",
+        "color11": "#A9969F",
+        "color12": "#CBA0AE",
+        "color13": "#BBB7C4",
+        "color14": "#D0B7C7",
+        "color15": "#e2dee2"
+    }
+}

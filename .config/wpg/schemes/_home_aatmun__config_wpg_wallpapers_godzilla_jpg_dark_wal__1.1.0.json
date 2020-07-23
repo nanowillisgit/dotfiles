@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/godzilla.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#352548",
+        "foreground": "#ffe9ea",
+        "cursor": "#ffe9ea"
+    },
+    "colors": {
+        "color0": "#352548",
+        "color1": "#498fff",
+        "color2": "#ff6ac9",
+        "color3": "#ff437e",
+        "color4": "#ff6c98",
+        "color5": "#5ee0ff",
+        "color6": "#0afeff",
+        "color7": "#ffc4c8",
+        "color8": "#ffc1c6",
+        "color9": "#a5c8ff",
+        "color10": "#ffb8e6",
+        "color11": "#ff99b9",
+        "color12": "#ffacc5",
+        "color13": "#90eaff",
+        "color14": "#b3ffff",
+        "color15": "#ffe9ea"
+    }
+}

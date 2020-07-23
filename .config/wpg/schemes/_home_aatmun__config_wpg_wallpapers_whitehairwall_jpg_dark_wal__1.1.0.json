@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/whitehairwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#7b363e",
+        "foreground": "#eae1df",
+        "cursor": "#eae1df"
+    },
+    "colors": {
+        "color0": "#7b363e",
+        "color1": "#FA839C",
+        "color2": "#E49DA9",
+        "color3": "#9BADD1",
+        "color4": "#D9B8C4",
+        "color5": "#A9D2F3",
+        "color6": "#D6D5DE",
+        "color7": "#eae1df",
+        "color8": "#a39d9c",
+        "color9": "#FA839C",
+        "color10": "#E49DA9",
+        "color11": "#9BADD1",
+        "color12": "#D9B8C4",
+        "color13": "#A9D2F3",
+        "color14": "#D6D5DE",
+        "color15": "#eae1df"
+    }
+}

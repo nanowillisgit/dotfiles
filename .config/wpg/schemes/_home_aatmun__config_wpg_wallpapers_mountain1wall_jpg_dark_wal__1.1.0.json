@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/mountain1wall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F1F37",
+        "foreground": "#e3e8ec",
+        "cursor": "#e3e8ec"
+    },
+    "colors": {
+        "color0": "#0F1F37",
+        "color1": "#949FB0",
+        "color2": "#8DB0E8",
+        "color3": "#A1BFF1",
+        "color4": "#90C6F2",
+        "color5": "#B5D2F4",
+        "color6": "#CEDEF5",
+        "color7": "#e3e8ec",
+        "color8": "#9ea2a5",
+        "color9": "#949FB0",
+        "color10": "#8DB0E8",
+        "color11": "#A1BFF1",
+        "color12": "#90C6F2",
+        "color13": "#B5D2F4",
+        "color14": "#CEDEF5",
+        "color15": "#e3e8ec"
+    }
+}

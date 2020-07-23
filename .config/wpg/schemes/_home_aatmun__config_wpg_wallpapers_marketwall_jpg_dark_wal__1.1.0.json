@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/marketwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#131515",
+        "foreground": "#ffffff",
+        "cursor": "#ffffff"
+    },
+    "colors": {
+        "color0": "#131515",
+        "color1": "#d7b384",
+        "color2": "#2aa3ef",
+        "color3": "#5e96c2",
+        "color4": "#639aa9",
+        "color5": "#80b8dc",
+        "color6": "#80aa99",
+        "color7": "#5b6b63",
+        "color8": "#bae9d2",
+        "color9": "#e5caa8",
+        "color10": "#87badb",
+        "color11": "#97c3e5",
+        "color12": "#c6dae0",
+        "color13": "#a2c4da",
+        "color14": "#d8e7e1",
+        "color15": "#ffffff"
+    }
+}

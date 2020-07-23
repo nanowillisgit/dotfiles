@@ -1,0 +1,71 @@
+#! /bin/sh
+
+col0={color0}
+col1={color1}
+col2={color2}
+col3={color3}
+col4={color4}
+col5={color5}
+col6={color6}
+col7={color7}
+col8={color8}
+col9={color9}
+col10={color10}
+col11={color11}
+col12={color12}
+col13={color13} 
+col14={color14}
+col15={color15}
+colinac={active}
+colact={inactive}
+
+####################################
+###### Getting things started ######
+####################################
+
+# Arrange monitors and create desktops
+setupmonitors
+
+bspc monitor HDMI-A-0 -d I II III IV V
+bspc monitor DisplayPort-1 -d VI VII VIII IX X
+
+# Program startup routine
+bspstart
+
+# Set some colors 
+bspc config normal_border_color "$colinac"
+bspc config focused_border_color "$col2"
+bspc config presel_feedback_color "$col3"
+
+bspc config border_width         4
+bspc config window_gap          20
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+## Window Rules
+bspc rule -a Zathura state=tiled
+bspc rule -a Transmission-gtk desktop=X
+bspc rule -a qBittorrent desktop=X 
+bspc rule -a TelegramDesktop state=tiled desktop=IX 
+bspc rule -a Anki state=floating
+bspc rule -a Pixinsight state=floating
+
+# Scratchpad rules
+bspc rule -a scterm sticky=on state=floating rectangle=710x360+1195+710 hidden=on
+bspc rule -a scfm sticky=on state=floating rectangle=710x360+1195+410 hidden=on
+
+## Launch scratchpad terminal if not already present
+if [ -z "$(xdotool search --class scterm)" ];
+then
+	st -A 1 -c scterm
+fi
+# Same for scratchpad file manager
+if [ -z "$(xdotool search --class scfm)" ];
+then
+	st -A 1 -c scfm -e ranger
+fi
+
+## Window swallowing
+ pidof bspswallow || bspswallow &

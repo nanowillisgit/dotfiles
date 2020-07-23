@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/bonsai1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#282833",
+        "foreground": "#feffff",
+        "cursor": "#feffff"
+    },
+    "colors": {
+        "color0": "#282833",
+        "color1": "#b4e6ff",
+        "color2": "#90ffc7",
+        "color3": "#ffff90",
+        "color4": "#caf2ff",
+        "color5": "#bedce8",
+        "color6": "#cbdae5",
+        "color7": "#8fd1d1",
+        "color8": "#babaff",
+        "color9": "#e3ffff",
+        "color10": "#d7fff5",
+        "color11": "#ffffdc",
+        "color12": "#e3ffff",
+        "color13": "#dcffff",
+        "color14": "#d9faff",
+        "color15": "#feffff"
+    }
+}

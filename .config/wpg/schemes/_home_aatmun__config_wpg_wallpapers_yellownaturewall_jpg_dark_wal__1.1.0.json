@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/yellownaturewall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1e1100",
+        "foreground": "#f5e8cf",
+        "cursor": "#f5e8cf"
+    },
+    "colors": {
+        "color0": "#1e1100",
+        "color1": "#9D7A44",
+        "color2": "#D48201",
+        "color3": "#EC9101",
+        "color4": "#F8A628",
+        "color5": "#E8B363",
+        "color6": "#FED28B",
+        "color7": "#f5e8cf",
+        "color8": "#aba290",
+        "color9": "#9D7A44",
+        "color10": "#D48201",
+        "color11": "#EC9101",
+        "color12": "#F8A628",
+        "color13": "#E8B363",
+        "color14": "#FED28B",
+        "color15": "#f5e8cf"
+    }
+}

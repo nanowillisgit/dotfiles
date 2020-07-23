@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/firelinkwall.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#251e24",
+        "foreground": "#c9cac5",
+        "cursor": "#c9cac5"
+    },
+    "colors": {
+        "color0": "#251e24",
+        "color1": "#85796E",
+        "color2": "#BB8653",
+        "color3": "#8F847E",
+        "color4": "#CF9358",
+        "color5": "#797A81",
+        "color6": "#9C9889",
+        "color7": "#c9cac5",
+        "color8": "#8c8d89",
+        "color9": "#85796E",
+        "color10": "#BB8653",
+        "color11": "#8F847E",
+        "color12": "#CF9358",
+        "color13": "#797A81",
+        "color14": "#9C9889",
+        "color15": "#c9cac5"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/tux.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#070707",
+        "foreground": "#e6e7e7",
+        "cursor": "#e6e7e7"
+    },
+    "colors": {
+        "color0": "#070707",
+        "color1": "#6C8393",
+        "color2": "#6D8494",
+        "color3": "#7592A6",
+        "color4": "#789ECA",
+        "color5": "#BDBCA1",
+        "color6": "#DCDCDC",
+        "color7": "#e6e7e7",
+        "color8": "#a1a1a1",
+        "color9": "#6C8393",
+        "color10": "#6D8494",
+        "color11": "#7592A6",
+        "color12": "#789ECA",
+        "color13": "#BDBCA1",
+        "color14": "#DCDCDC",
+        "color15": "#e6e7e7"
+    }
+}

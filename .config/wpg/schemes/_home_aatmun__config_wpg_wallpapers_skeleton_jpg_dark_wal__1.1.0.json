@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/skeleton.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d0a0a",
+        "foreground": "#e7e6e7",
+        "cursor": "#e7e6e7"
+    },
+    "colors": {
+        "color0": "#0d0a0a",
+        "color1": "#4848AF",
+        "color2": "#918F8F",
+        "color3": "#A1989D",
+        "color4": "#B1B1B1",
+        "color5": "#BEBCC1",
+        "color6": "#CCCCCC",
+        "color7": "#e7e6e7",
+        "color8": "#a1a1a1",
+        "color9": "#4848AF",
+        "color10": "#918F8F",
+        "color11": "#A1989D",
+        "color12": "#B1B1B1",
+        "color13": "#BEBCC1",
+        "color14": "#CCCCCC",
+        "color15": "#e7e6e7"
+    }
+}

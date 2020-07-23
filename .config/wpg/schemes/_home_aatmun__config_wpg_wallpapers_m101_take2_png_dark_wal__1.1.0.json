@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/m101_take2.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#211b1b",
+        "foreground": "#ffe1ff",
+        "cursor": "#ffe1ff"
+    },
+    "colors": {
+        "color0": "#211b1b",
+        "color1": "#ff8778",
+        "color2": "#6a5c95",
+        "color3": "#8b5265",
+        "color4": "#6e7ae2",
+        "color5": "#986ab3",
+        "color6": "#505cad",
+        "color7": "#ffb3ff",
+        "color8": "#344834",
+        "color9": "#ffcb9b",
+        "color10": "#825bd6",
+        "color11": "#b15476",
+        "color12": "#7484ff",
+        "color13": "#b76beb",
+        "color14": "#4456b5",
+        "color15": "#ffe1ff"
+    }
+}

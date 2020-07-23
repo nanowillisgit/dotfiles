@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/sekirodragonwall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#09121a",
+        "foreground": "#a6e4e8",
+        "cursor": "#a6e4e8"
+    },
+    "colors": {
+        "color0": "#09121a",
+        "color1": "#616D92",
+        "color2": "#AE6A99",
+        "color3": "#188CB4",
+        "color4": "#10A8D5",
+        "color5": "#609FC0",
+        "color6": "#16D8EC",
+        "color7": "#a6e4e8",
+        "color8": "#749fa2",
+        "color9": "#616D92",
+        "color10": "#AE6A99",
+        "color11": "#188CB4",
+        "color12": "#10A8D5",
+        "color13": "#609FC0",
+        "color14": "#16D8EC",
+        "color15": "#a6e4e8"
+    }
+}

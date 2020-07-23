@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/greatwave.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0e111c",
+        "foreground": "#e5e4dd",
+        "cursor": "#e5e4dd"
+    },
+    "colors": {
+        "color0": "#0e111c",
+        "color1": "#7699A7",
+        "color2": "#9CA6A2",
+        "color3": "#CCBB9F",
+        "color4": "#D8C5A8",
+        "color5": "#E6CBA8",
+        "color6": "#A2C0C4",
+        "color7": "#e5e4dd",
+        "color8": "#a09f9a",
+        "color9": "#7699A7",
+        "color10": "#9CA6A2",
+        "color11": "#CCBB9F",
+        "color12": "#D8C5A8",
+        "color13": "#E6CBA8",
+        "color14": "#A2C0C4",
+        "color15": "#e5e4dd"
+    }
+}

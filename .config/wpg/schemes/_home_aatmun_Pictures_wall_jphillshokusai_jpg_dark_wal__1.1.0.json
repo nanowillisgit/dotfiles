@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/jphillshokusai.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181614",
+        "foreground": "#efe5cc",
+        "cursor": "#efe5cc"
+    },
+    "colors": {
+        "color0": "#181614",
+        "color1": "#5C8F52",
+        "color2": "#A19265",
+        "color3": "#EA9962",
+        "color4": "#ECCF6F",
+        "color5": "#4B6D93",
+        "color6": "#BDAD91",
+        "color7": "#efe5cc",
+        "color8": "#a7a08e",
+        "color9": "#5C8F52",
+        "color10": "#A19265",
+        "color11": "#EA9962",
+        "color12": "#ECCF6F",
+        "color13": "#4B6D93",
+        "color14": "#BDAD91",
+        "color15": "#efe5cc"
+    }
+}

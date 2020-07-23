@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/loveiswarillustration.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#04072C",
+        "foreground": "#dfd1df",
+        "cursor": "#dfd1df"
+    },
+    "colors": {
+        "color0": "#04072C",
+        "color1": "#B38B72",
+        "color2": "#646192",
+        "color3": "#9D6C98",
+        "color4": "#DE9E91",
+        "color5": "#CEB1BC",
+        "color6": "#C5ADCB",
+        "color7": "#dfd1df",
+        "color8": "#9c929c",
+        "color9": "#B38B72",
+        "color10": "#646192",
+        "color11": "#9D6C98",
+        "color12": "#DE9E91",
+        "color13": "#CEB1BC",
+        "color14": "#C5ADCB",
+        "color15": "#dfd1df"
+    }
+}

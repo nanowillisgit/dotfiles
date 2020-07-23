@@ -1,0 +1,26 @@
+#!/bin/sh
+
+state=$(piactl get connectionstate)
+
+if [ ! -f "/tmp/piastate" ]; 
+then
+	echo "$state" > /tmp/piastate
+fi
+
+prevstate=$(cat /tmp/piastate)
+
+if { [ "$state" = Connected ] && [ "$prevstate" = Connecting ] ; }
+then
+	notify-send -i "~/.config/icons/vpn-48.png" "pia event" "$state" --urgency=critical --expire-time=5000
+elif { [ "$state" = Disconnected ] && [ "$prevstate" = Disconnecting ] ; }
+then
+	notify-send -i "~/.config/icons/vpn-48.png" "pia event" "$state" --urgency=critical --expire-time=5000
+fi
+
+echo "$state" > /tmp/piastate
+
+if [ "$(ip a | grep "tun0")" != "" ] ; then
+	echo "VPN ${state}: $(piactl get vpnip)(v)"
+else
+	echo "VPN ${state}: $(piactl get vpnip)(u)"
+fi

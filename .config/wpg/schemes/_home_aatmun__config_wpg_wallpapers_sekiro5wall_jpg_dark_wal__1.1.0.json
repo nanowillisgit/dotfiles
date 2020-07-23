@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/sekiro5wall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a0b0c",
+        "foreground": "#f2e9ba",
+        "cursor": "#f2e9ba"
+    },
+    "colors": {
+        "color0": "#0a0b0c",
+        "color1": "#F5EB69",
+        "color2": "#3F6D90",
+        "color3": "#4396BC",
+        "color4": "#6BAFB2",
+        "color5": "#439EC0",
+        "color6": "#9BB4B6",
+        "color7": "#f2e9ba",
+        "color8": "#a9a382",
+        "color9": "#F5EB69",
+        "color10": "#3F6D90",
+        "color11": "#4396BC",
+        "color12": "#6BAFB2",
+        "color13": "#439EC0",
+        "color14": "#9BB4B6",
+        "color15": "#f2e9ba"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/meteormoonwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#272340",
+        "foreground": "#bdfeff",
+        "cursor": "#bdfeff"
+    },
+    "colors": {
+        "color0": "#272340",
+        "color1": "#5A1854",
+        "color2": "#455747",
+        "color3": "#B21D69",
+        "color4": "#A7C134",
+        "color5": "#2F2D8E",
+        "color6": "#3933A6",
+        "color7": "#89a7c3",
+        "color8": "#5f7488",
+        "color9": "#be4fb4",
+        "color10": "#a6bea9",
+        "color11": "#ff2094",
+        "color12": "#b6ee5b",
+        "color13": "#3634ed",
+        "color14": "#4f35ef",
+        "color15": "#bdfeff"
+    }
+}

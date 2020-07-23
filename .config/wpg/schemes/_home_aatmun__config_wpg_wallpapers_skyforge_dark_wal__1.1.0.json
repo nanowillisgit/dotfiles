@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/skyforge",
+    "alpha": "100",
+
+    "special": {
+        "background": "#18100c",
+        "foreground": "#deeaf6",
+        "cursor": "#deeaf6"
+    },
+    "colors": {
+        "color0": "#18100c",
+        "color1": "#AA9D64",
+        "color2": "#E0B04A",
+        "color3": "#DBA362",
+        "color4": "#6E629B",
+        "color5": "#CDBC9F",
+        "color6": "#B4D5FA",
+        "color7": "#deeaf6",
+        "color8": "#9ba3ac",
+        "color9": "#AA9D64",
+        "color10": "#E0B04A",
+        "color11": "#DBA362",
+        "color12": "#6E629B",
+        "color13": "#CDBC9F",
+        "color14": "#B4D5FA",
+        "color15": "#deeaf6"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/sakuraforest.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#011516",
+        "foreground": "#f5d8f5",
+        "cursor": "#f5d8f5"
+    },
+    "colors": {
+        "color0": "#011516",
+        "color1": "#f261a4",
+        "color2": "#ff99f0",
+        "color3": "#ff85b6",
+        "color4": "#fb81b9",
+        "color5": "#ff5fab",
+        "color6": "#c199ff",
+        "color7": "#f9bdf9",
+        "color8": "#134547",
+        "color9": "#ff65d1",
+        "color10": "#feaffe",
+        "color11": "#ff96ff",
+        "color12": "#ff8eec",
+        "color13": "#ff63e8",
+        "color14": "#feb0fe",
+        "color15": "#f5d8f5"
+    }
+}

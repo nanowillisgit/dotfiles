@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/zioneonwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101c21",
+        "foreground": "#ebcedc",
+        "cursor": "#ebcedc"
+    },
+    "colors": {
+        "color0": "#101c21",
+        "color1": "#9F2C88",
+        "color2": "#A05D94",
+        "color3": "#D35B9F",
+        "color4": "#419397",
+        "color5": "#A89AAE",
+        "color6": "#E193B7",
+        "color7": "#ebcedc",
+        "color8": "#a4909a",
+        "color9": "#9F2C88",
+        "color10": "#A05D94",
+        "color11": "#D35B9F",
+        "color12": "#419397",
+        "color13": "#A89AAE",
+        "color14": "#E193B7",
+        "color15": "#ebcedc"
+    }
+}

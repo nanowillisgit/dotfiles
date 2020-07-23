@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/vibrantoceanwall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#240114",
+        "foreground": "#f5a897",
+        "cursor": "#f5a897"
+    },
+    "colors": {
+        "color0": "#240114",
+        "color1": "#6E084A",
+        "color2": "#500469",
+        "color3": "#A6093B",
+        "color4": "#CD0E37",
+        "color5": "#94094A",
+        "color6": "#F0314A",
+        "color7": "#f5a897",
+        "color8": "#ab7569",
+        "color9": "#6E084A",
+        "color10": "#500469",
+        "color11": "#A6093B",
+        "color12": "#CD0E37",
+        "color13": "#94094A",
+        "color14": "#F0314A",
+        "color15": "#f5a897"
+    }
+}

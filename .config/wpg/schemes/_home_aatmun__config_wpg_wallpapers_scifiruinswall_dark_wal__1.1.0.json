@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/scifiruinswall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010101",
+        "foreground": "#e5a5a2",
+        "cursor": "#e5a5a2"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#673D48",
+        "color2": "#504559",
+        "color3": "#684857",
+        "color4": "#524C63",
+        "color5": "#893E46",
+        "color6": "#A0484B",
+        "color7": "#e5a5a2",
+        "color8": "#a07371",
+        "color9": "#673D48",
+        "color10": "#504559",
+        "color11": "#684857",
+        "color12": "#524C63",
+        "color13": "#893E46",
+        "color14": "#A0484B",
+        "color15": "#e5a5a2"
+    }
+}

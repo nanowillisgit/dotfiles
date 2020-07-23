@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/innercitywall.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#2c2633",
+        "foreground": "#eddcb7",
+        "cursor": "#eddcb7"
+    },
+    "colors": {
+        "color0": "#2c2633",
+        "color1": "#8c733f",
+        "color2": "#3f3683",
+        "color3": "#6e6299",
+        "color4": "#85705b",
+        "color5": "#ad7a2d",
+        "color6": "#b98e4e",
+        "color7": "#766642",
+        "color8": "#eec87a",
+        "color9": "#b29d70",
+        "color10": "#575185",
+        "color11": "#8f88a7",
+        "color12": "#8a7f74",
+        "color13": "#be975c",
+        "color14": "#c1a47a",
+        "color15": "#eddcb7"
+    }
+}

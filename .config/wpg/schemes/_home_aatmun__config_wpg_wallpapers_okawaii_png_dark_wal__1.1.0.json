@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/okawaii.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b0b0b",
+        "foreground": "#f4eff2",
+        "cursor": "#f4eff2"
+    },
+    "colors": {
+        "color0": "#0b0b0b",
+        "color1": "#e01d43",
+        "color2": "#cc1c40",
+        "color3": "#b14954",
+        "color4": "#817a87",
+        "color5": "#e01f44",
+        "color6": "#d81f42",
+        "color7": "#dbcacc",
+        "color8": "#821535",
+        "color9": "#ec154d",
+        "color10": "#ec154a",
+        "color11": "#ef4e5f",
+        "color12": "#a98ec0",
+        "color13": "#ec174e",
+        "color14": "#ec184c",
+        "color15": "#f4eff2"
+    }
+}

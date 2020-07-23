@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/aatmun/Pictures/wall/2bladerunnerwall.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#060507",
+        "foreground": "#b1b8bd",
+        "cursor": "#b1b8bd"
+    },
+    "colors": {
+        "color0": "#060507",
+        "color1": "#5C6157",
+        "color2": "#892C69",
+        "color3": "#9A534B",
+        "color4": "#688A72",
+        "color5": "#C99F3C",
+        "color6": "#9C9C6C",
+        "color7": "#b1b8bd",
+        "color8": "#7b8084",
+        "color9": "#5C6157",
+        "color10": "#892C69",
+        "color11": "#9A534B",
+        "color12": "#688A72",
+        "color13": "#C99F3C",
+        "color14": "#9C9C6C",
+        "color15": "#b1b8bd"
+    }
+}

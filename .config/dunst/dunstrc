@@ -1,0 +1,111 @@
+[colors]
+	background = "#282a36"
+	foreground = "#f8f8f2"
+	one = "#ff5555"
+	two = "#50fa7b"
+	three = "#f1fa8c"
+	four = "#bd93f9"
+	five = "#ff79c6"
+	six = "#8be9fd"
+	seven = "#bfbfbf"
+	eight = "#4d4d4d"
+	nine = "#ff6e67"
+	ten = "#5af78e"
+	eleven = "#f4f99d"
+	twelve = "#caa9fa"
+	thirteen = "#ff92d0"
+	fourteen = "#9aedfe"
+	fifteen = "#f8f8f2"
+	active = "#cb5852"
+	inactive = "#8c3c38"
+
+[global]
+    ### Display ###
+
+    monitor = 0
+    follow = mouse
+
+    geometry = "540x5-10+40"
+    indicate_hidden = yes
+    shrink = yes
+    transparency = 0
+    notification_height = 0
+    separator_height = 3
+    padding = 12
+    horizontal_padding = 12
+    frame_width = 3
+
+    frame_color = colors.active
+    separator_color = colors.active
+    sort = yes
+    idle_threshold = 120
+
+    ### Text ###
+    font = Terminus 11
+    line_height = 0
+
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = "<b>%s </b>\n%b"
+    alignment = left
+    show_age_threshold = 60
+    word_wrap = yes
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+
+    ### Icons ###
+    icon_position = leftS
+    max_icon_size = 50
+    icon_path = ~/.config/icons/:~/.config/
+
+    ### History ###
+    sticky_history = yes
+    history_length = 20
+
+    ### Misc/Advanced ###
+    dmenu = /usr/bin/rofi -show run -p dunst:
+    browser = /usr/bin/firefox
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    startup_notification = false
+    force_xinerama = false
+
+[experimental]
+    per_monitor_dpi = false
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    context = ctrl+shift+period
+
+[urgency_low]
+    background = colors.background
+    foreground = colors.foreground
+    frame_color = colors.inactive
+    timeout = 10
+
+[urgency_normal]
+    background = colors.background
+    foreground = colors.foreground
+    frame_color = colors.active
+    timeout = 10
+
+[urgency_critical]
+    background = colors.background
+    foreground = colors.foreground
+    frame_color = "#ff0000"
+    timeout = 0

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/aatmun/.config/wpg/wallpapers/airportwall",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f0025",
+        "foreground": "#97cce8",
+        "cursor": "#97cce8"
+    },
+    "colors": {
+        "color0": "#0f0025",
+        "color1": "#2C4D72",
+        "color2": "#32248F",
+        "color3": "#540C89",
+        "color4": "#58239A",
+        "color5": "#405ABB",
+        "color6": "#AE34B2",
+        "color7": "#97cce8",
+        "color8": "#698ea2",
+        "color9": "#2C4D72",
+        "color10": "#32248F",
+        "color11": "#540C89",
+        "color12": "#58239A",
+        "color13": "#405ABB",
+        "color14": "#AE34B2",
+        "color15": "#97cce8"
+    }
+}
