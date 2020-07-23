@@ -1,0 +1,61 @@
+priority -50
+
+# Class skeleton with constructors and destructor
+snippet class "class" iA
+class $1 {
+	public:
+		$1();
+		~$1();
+		$1(const $1&);
+		$1& operator=(const $1);
+
+		$0
+
+	private:
+}
+endsnippet
+
+# Template
+snippet tmpl "template" iA
+template<typename $1>
+$0
+endsnippet
+
+# Templated function
+snippet tfun "templated function" iA
+template<typename $1>
+$2 $3($4){
+	$5
+}
+$0
+endsnippet
+
+# Vector expansion
+snippet vctr "vector" iA
+std::vector<$1> $0
+endsnippet
+
+# Include iostream
+snippet incio "include iostream" iA
+#include <iostream>
+$0
+endsnippet
+
+# Include arbitrary std header
+snippet inc "include <>" 
+#include <$1>
+$0
+endsnippet
+
+# Inclue arbitrary header
+snippet inch "include header" 
+#include "$1.h" 
+$0
+endsnippet
+
+# Function
+snippet fun "function skeleton"
+$1 $2($3){
+        $0
+}
+endsnippet
