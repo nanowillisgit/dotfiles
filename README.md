@@ -1,11 +1,11 @@
-# dotfiles
+# Dotfiles
 
 Dotfile reposotiry for bspwm plus a whole bunch of other programs
 
 ## Program configs featured
 - `bspwm`
 - `dunst`
-- `fish` + `oh-my-fish`
+- `fish` and optionally `oh-my-fish`
 - `mpv`
 - `neovim`
 - `picom`
@@ -15,8 +15,9 @@ Dotfile reposotiry for bspwm plus a whole bunch of other programs
 - `sxhkd`
 - `wpgtk`
 
-## Bar requirements to replicate my setup
+## Bare requirements to replicate my setup
 - `bspwm`
 - `wpgtk`
 - `picom`
+- `polybar`
 - `rofi`
