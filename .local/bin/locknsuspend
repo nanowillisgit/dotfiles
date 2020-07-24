@@ -2,4 +2,4 @@
 
 # Lock system and suspend
 
-notify-send -i "/home/aatmun/.config/icons/sleeping-in-bed-100.png" "System suspending..." --urgency=critical  --expire-time=500 && i3lock-fancy -f Noto-Sans-CJK-JP-Bold && systemctl suspend
+notify-send -i "$HOME/.config/icons/sleeping-in-bed-100.png" "System suspending..." --urgency=critical  --expire-time=500 && i3lock-fancy -f Noto-Sans-CJK-JP-Bold && systemctl suspend

@@ -17,6 +17,7 @@ Dotfile reposotiry for bspwm plus a whole bunch of other programs
 
 ## Bare requirements to replicate my setup
 - `bspwm`
+- `dunst` (to be used with `libnotify`)
 - `wpgtk`
 - `picom`
 - `polybar`

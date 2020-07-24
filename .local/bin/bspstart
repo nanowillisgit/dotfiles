@@ -10,7 +10,7 @@ pgrep -x sxhkd || sxhkd &
 piactl background enable
 
 # Restore wpg wallpaper and scheme
-sh /home/aatmun/.config/wpg/wp_init.sh
+sh $HOME/.config/wpg/wp_init.sh
 
 # Start dunst is not exist
 pgrep -x dunst || dunst &

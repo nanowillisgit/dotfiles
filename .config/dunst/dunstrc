@@ -16,8 +16,8 @@
 	thirteen = "#ff92d0"
 	fourteen = "#9aedfe"
 	fifteen = "#f8f8f2"
-	active = "#7bbdcb"
-	inactive = "#54828b"
+	active = "#c3c77d"
+	inactive = "#868856"
 
 [global]
     ### Display ###

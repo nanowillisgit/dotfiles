@@ -2,4 +2,4 @@
 
 # Lock system and hibernate
 
-notify-send -i "/home/aatmun/.config/icons/moon-and-stars-100.png" "System hibernating..." --urgency=critical --expire-time=500 && i3lock-fancy -f Noto-Sans-CJK-JP-Bold && systemctl hibernate
+notify-send -i "$HOME/.config/icons/moon-and-stars-100.png" "System hibernating..." --urgency=critical --expire-time=500 && i3lock-fancy -f Noto-Sans-CJK-JP-Bold && systemctl hibernate
