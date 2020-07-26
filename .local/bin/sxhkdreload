@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Restart sxhkd with appropriate system-specific configs
+
+pgrep -x sxhkd && killall -q sxhkd
+
+if [ $(cat /etc/hostname) = "astro" ]; then
+	sxhkd -c $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.desk &
+else
+	sxhkd -c $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.laptop &
+fi
