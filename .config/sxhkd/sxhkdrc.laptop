@@ -1,0 +1,25 @@
+# sxhkd binding specific to X220 laptop
+# Lock session (requires i3lock-fancy)
+XF86ScreenSaver
+	i3lock-fancy -f Noto-Sans-CJK-JP-Bold
+
+
+#####################
+## System Controls ##
+#####################
+
+# Lower brightness
+XF86MonBrightnessDown
+	xbacklight -dec 5
+
+# Raise brightness
+XF86MonBrightnessUp
+	xbacklight -inc 5
+
+# Set brightness to minimum
+ctrl + XF86MonBrightnessDown
+	xbacklight 1
+
+# Set brightness to maximum
+ctrl + XF86MonBrightnessUp
+	xbacklight 100

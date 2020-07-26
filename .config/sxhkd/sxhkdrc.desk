@@ -1,0 +1,26 @@
+# sxhkd config for keybinding specific to desktop
+
+##########################
+# Launching applications##
+##########################
+
+# Lock session (requires i3lock-fancy)
+XF86Explorer
+	i3lock-fancy -f Noto-Sans-CJK-JP-Bold
+
+# Launch file manager on desktop VI and focuses desktop VI
+super + shift + e
+	bspc rule -a St --one-shot state=floating rectangle=800x450+600+300 desktop=VI focus=on && st -A 1 -e ranger & bspc desktop VI --focus
+
+# xmenu
+super + alt + space
+	$HOME/.config/xmenu/xmenu.sh
+
+XF86Tools
+	bspc rule -a St --one-shot state=floating rectangle=690x350+1950+75 desktop=VII && \
+	st -A 1 -e pacmixer & \
+	sleep .1s && \
+	bspc rule -a St --one-shot state=floating rectangle=960x280+1950+470 desktop=VII && \
+	st -A 1 -e cava & \
+	bspc desktop VII --focus
+
