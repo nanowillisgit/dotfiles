@@ -3,14 +3,14 @@
 # Program startup routine for bspwm session
 
 # Start some important programs....
-pregp -x picom || picom &
-pgrep -x sxhkd || sxhkd &
+pgrep -x picom || picom &
+sxhkdreload
 
 # Enable background pia vpn control
 piactl background enable
 
 # Restore wpg wallpaper and scheme
-sh $HOME/.config/wpg/wp_init.sh
+$HOME/.config/wpg/wp_init.sh
 
 # Start dunst is not exist
 pgrep -x dunst || dunst &
@@ -19,11 +19,9 @@ pgrep -x dunst || dunst &
 pgrep -x redshift || redshift &
 
 # Start polybar if not exist
-if pgrep -x polybar
-then	
-	echo "Bars running"
-else
+if [ $(cat /etc/hostname) = "astro" ]; then	
 	polybar top -c ~/.config/polybar/config &
 	polybar two -c ~/.config/polybar/config &
+else
+	polybar top -c ~/.config/polybar/config &
 fi
-
