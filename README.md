@@ -14,6 +14,7 @@ Dotfile repository for bspwm plus a whole bunch of other programs
 - `rofi`
 - `sxhkd`
 - `wpgtk`
+- `xmenu`
 
 ## Bare requirements to replicate my setup
 - `bspwm`
