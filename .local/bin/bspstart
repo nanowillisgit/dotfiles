@@ -18,7 +18,8 @@ pgrep -x dunst || dunst &
 # Start redshift if not exist
 pgrep -x redshift || redshift &
 
-# Start polybar if not exist
+# Start polybar if not exist; kill if already running
+pgrep -x polybar && killall -q polybar
 if [ $(cat /etc/hostname) = "astro" ]; then	
 	polybar top -c ~/.config/polybar/config &
 	polybar two -c ~/.config/polybar/config &
