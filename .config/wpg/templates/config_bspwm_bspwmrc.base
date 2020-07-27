@@ -24,7 +24,7 @@ colact={inactive}
 ####################################
 
 # Arrange monitors and create desktops
-if [ $(hostname) = "astro"]; then
+if [ $(hostname) = "astro" ]; then
 	setupmonitors
 	bspc monitor HDMI-A-0 -d I II III IV V
 	bspc monitor DisplayPort-1 -d VI VII VIII IX X
