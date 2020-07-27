@@ -25,14 +25,14 @@
     monitor = 0
     follow = mouse
 
-    geometry = "540x5-10+40"
+    geometry = "540x90-10+40"
     indicate_hidden = yes
     shrink = yes
     transparency = 0
     notification_height = 0
-    separator_height = 3
-    padding = 12
-    horizontal_padding = 12
+    separator_height = 5
+    padding = 20
+    horizontal_padding = 20
     frame_width = 3
 
     frame_color = colors.active
@@ -41,7 +41,7 @@
     idle_threshold = 120
 
     ### Text ###
-    font = Terminus 11
+    font = Terminus 12
     line_height = 0
 
     markup = full
@@ -68,7 +68,7 @@
 
     ### Icons ###
     icon_position = leftS
-    max_icon_size = 50
+    max_icon_size = 75
     icon_path = ~/.config/icons/:~/.config/
 
     ### History ###
