@@ -24,10 +24,13 @@ colact={inactive}
 ####################################
 
 # Arrange monitors and create desktops
-setupmonitors
-
-bspc monitor HDMI-A-0 -d I II III IV V
-bspc monitor DisplayPort-1 -d VI VII VIII IX X
+if [ $(cat /etc/hostname) = "astro"]; then
+	setupmonitors
+	bspc monitor HDMI-A-0 -d I II III IV V
+	bspc monitor DisplayPort-1 -d VI VII VIII IX X
+else
+	bspc monitor -d I II III IV V VI VII VIII IX X
+fi
 
 # Program startup routine
 bspstart
@@ -48,7 +51,7 @@ bspc config gapless_monocle      true
 bspc rule -a Zathura state=tiled
 bspc rule -a Transmission-gtk desktop=X
 bspc rule -a qBittorrent desktop=X 
-bspc rule -a TelegramDesktop state=tiled desktop=IX 
+bspc rule -a TelegramDesktop state=floating desktop=IX 
 bspc rule -a Anki state=floating
 bspc rule -a Pixinsight state=floating
 
@@ -68,4 +71,4 @@ then
 fi
 
 ## Window swallowing
- pidof bspswallow || bspswallow &
+pidof bspswallow || bspswallow &
