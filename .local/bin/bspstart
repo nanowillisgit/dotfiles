@@ -21,8 +21,8 @@ pgrep -x redshift || redshift &
 # Start polybar if not exist; kill if already running
 pgrep -x polybar && killall -q polybar
 if [ $(cat /etc/hostname) = "astro" ]; then	
-	polybar top -c ~/.config/polybar/config &
-	polybar two -c ~/.config/polybar/config &
+	polybar top -c $HOME/.config/polybar/config &
+	polybar two -c $HOME/.config/polybar/config &
 else
-	polybar top -c ~/.config/polybar/config &
+	polybar top -c $HOME/.config/polybar/config &
 fi
