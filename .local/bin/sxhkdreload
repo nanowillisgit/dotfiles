@@ -4,8 +4,10 @@
 
 pgrep -x sxhkd && killall -q sxhkd
 
-if [ $(cat /etc/hostname) = "astro" ]; then
+if [ $(hostname) = "astro" ]; then
 	sxhkd -c $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.desk &
-else
+elif [ $(hostname) = "EVA-01" ]; then
 	sxhkd -c $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.laptop &
+else
+	sxhkd -c $HOME/.config/sxhkd/sxhkdrc.common
 fi

@@ -10,7 +10,7 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bars based on machine
-if [ $(cat /etc/hostname) = "astro" ]; then
+if [ $(hostname) = "astro" ]; then
 	polybar top -c $HOME/.config/polybar/config &
 	polybar two -c $HOME/.config/polybar/config &
 else
