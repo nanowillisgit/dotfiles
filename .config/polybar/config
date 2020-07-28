@@ -131,6 +131,66 @@ wm-restack = bspwm
 
 ;cursor-click = pointer
 ;cursor-scroll = ns-resize
+;
+;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;; Laptop Bar ;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[bar/laptop]
+
+;monitor = ${env:MONITOR:HDMI-A-0}
+width = 100%
+height = 28
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 1
+line-color = #fff
+
+border-size = 7
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = xos4 Terminus:size=12;1
+font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
+font-2 = Noto Sans CJK JP Medium:style=Medium:pixelsize=11;1
+
+modules-left = bspwm xwindow
+;modules-center = 
+;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = date custom-pacman-aurhelper powermenu
+modules-center = cpu memory temperature battery pulseaudio 
+
+tray-position = center
+tray-padding = 2
+;tray-background = #0063ff
+
+wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+;cursor-click = pointer
+;cursor-scroll = ns-resize
+
+
 
 [module/xwindow]
 type = internal/xwindow
@@ -708,9 +768,9 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+;format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+;format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%

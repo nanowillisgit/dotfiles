@@ -24,5 +24,5 @@ if [ $(hostname) = "astro" ]; then
 	polybar top -c $HOME/.config/polybar/config &
 	polybar two -c $HOME/.config/polybar/config &
 else
-	polybar top -c $HOME/.config/polybar/config &
+	polybar laptop -c $HOME/.config/polybar/config &
 fi
