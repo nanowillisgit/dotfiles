@@ -111,6 +111,11 @@ let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_theme='wpgtk'
 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 
 " Vimtex configuration
 let g:tex_flavor='xelatex'
@@ -137,6 +142,9 @@ highlight Comment cterm=italic gui=italic
 
 nmap <C-o> :NERDTreeToggle<CR>
 
+" Detect sxhkd filetype
+au BufRead,BufNewFile sxhkd*	set filetype=sxhkd
+
 nnoremap zz :update<cr>
 nnoremap <C-e> :x<cr>
 
@@ -148,6 +156,11 @@ nnoremap <buffer><nowait><silent> <C-k> :<c-u>silent call system('echo require(r
 
 " Compile R Markdown files
 autocmd FileType rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+
+" Restart sxhkd when writing any of the config files
+autocmd BufWritePost *sxhkdrc.common !sxhkdreload
+autocmd BufWritePost *sxhkdrc.desk !sxhkdreload
+autocmd BufWritePost *sxhkdrc.laptop !sxhkdreload
 
 map <leader>c :w! \| !compiler <c-r>%<CR>
 "autocmd TextChanged,TextChangedI <buffer> silent write
