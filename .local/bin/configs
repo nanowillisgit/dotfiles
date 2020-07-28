@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Graphical menu to edit more frequently edited config files
+
+declare options=("bspwm
+dunst
+neovim
+polybar
+rofi
+picom
+st
+sxhkd
+sxivkeyhandler
+quit")
+
+choice=$(echo -e "${options[@]}" | rofi -dmenu -i -p 'Edit config file: ')
+
+case "$choice" in
+	quit)
+		echo "Program terminated." && exit 1
+	;;
+	bspwm)
+		choice="$HOME/.config/wpg/templates/config_bspwm_bspwmrc.base"
+	;;
+	dunst)
+		choice="$HOME/.config/wpg/templates/config_dunst_dunstrc.base"
+	;;
+	nvim)
+		choice="$HOME/.config/nvim/init.vim"
+	;;
+	polybar)
+		choice="$HOME/.config/polybar/config"
+	;;
+	picom)
+		choice="$HOME/.config/picom/picom.conf"
+	;;
+	rofi)
+		choice="$HOME/.config/wpg/templates/config_rofi_config.base"
+	;;
+	st)
+		choice="$HOME/.config/st/config.h"
+	;;
+	sxivkeyhandler)
+		choice="$HOME/.config/sxiv/exec/key-handler"
+	;;
+	sxhkd)
+		st -A 1 -e nvim -O $HOME/.config/sxhkd/*
+		exit 1
+	;;
+	xresources)
+		choice="$HOME/.Xresources"
+	;;
+	*)
+		exit 1
+	;;
+esac
+st -A 1 -e nvim "$choice"
