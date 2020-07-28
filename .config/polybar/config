@@ -65,7 +65,7 @@ modules-left = bspwm filesystem memory cpu vpn-watcher
 ;tray-padding = 2
 ;tray-background = background
 
-wm-restack = bspwm
+;wm-restack = bspwm
 ;wm-restack = i3
 
 ;override-redirect = true
