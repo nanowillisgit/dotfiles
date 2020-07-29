@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# Draw rectangle on screen to select next application to open in that rectangle
-
-rect=$(slop)
-bspc rule -a St --one-shot state=floating rectangle=$rect
