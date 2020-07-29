@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Draw rectangle on screen; open app launch prompt and open app in rectangle
+
+rect=$(slop -b 5)
+if [ -z "$rect" ]; then
+	exit 1
+else 
+	bspc rule -a "*" --one-shot state=floating rectangle=$rect
+fi
+rofi -show run
