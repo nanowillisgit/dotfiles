@@ -53,7 +53,7 @@ module-margin-right = 2
 
 font-0 = xos4 Terminus:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
-font-2 = Noto Sans CJK JP Medium:style=Medium:pixelsize=10;1
+font-2 = Noto Sans CJK JP Medium:style=Medium:pixelsize=9;1
 
 modules-left = bspwm filesystem memory cpu vpn-watcher 
 ;modules-center = 
@@ -140,7 +140,7 @@ wm-restack = bspwm
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [bar/laptop]
 
-;monitor = ${env:MONITOR:HDMI-A-0}
+;monitor = LVDS1
 width = 100%
 height = 28
 ;offset-x = 1%
@@ -167,10 +167,8 @@ font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
 font-2 = Noto Sans CJK JP Medium:style=Medium:pixelsize=11;1
 
 modules-left = bspwm xwindow
-;modules-center = 
-;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date custom-pacman-aurhelper powermenu
-modules-center = cpu memory temperature battery pulseaudio 
+modules-right = backlight pulseaudio date custom-pacman-aurhelper powermenu
+modules-center = filesystem mpu memory temperature battery
 
 tray-position = center
 tray-padding = 2
@@ -194,7 +192,7 @@ wm-restack = bspwm
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:50:-%
+label = %title:0:20:-%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -304,43 +302,6 @@ ws-icon-9 = X;十
 ; Separator in between workspaces
 ; label-separator = |
 
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
-
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-
-label-mode-padding = 1
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
-
-; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 1
-
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-padding = 1
-
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
-
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 1
-
-; Separator in between workspaces
-; label-separator = |
-
 
 [module/mpd]
 type = internal/mpd
@@ -355,28 +316,6 @@ icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
-[module/xbacklight]
-type = internal/xbacklight
-
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-[module/backlight-acpi]
-inherit = module/xbacklight
-type = internal/backlight
-card = intel_backlight
-
 [module/backlight]
 type = internal/backlight
 
@@ -388,11 +327,11 @@ card = intel_backlight
 ;   <label> (default)
 ;   <ramp>
 ;   <bar>
-format = <label> <bar>
+format = <label>
 
 ; Available tokens:
 ;   %percentage% (default)
-label = LITE: %percentage%%
+label = 画面: %percentage%%
 
 ; Only applies if <ramp> is used
 ramp-0 = 🌕
@@ -461,7 +400,7 @@ label = %percentage_used%%
 ;   <bar-swap-free>
 ;   <ramp-swap-used>
 ;   <ramp-swap-free>
-format = <label> 
+format = <label>
 ;format = <label>
 
 ; Available tokens:
@@ -683,7 +622,7 @@ type = internal/battery
 
 ; Use the following command to list batteries and adapters:
 ; $ ls -1 /sys/class/power_supply/
-battery = BAT1
+battery = BAT0
 adapter = AC
 
 ; This is useful in case the battery never reports 100% charge
@@ -707,12 +646,12 @@ time-format = %H:%M
 ;   <animation-charging>
 ;format-charging-prefix = "BAT (CHR):"
 ;format-charging = <animation-charging> <label-charging>
-format-charging = BAT (CHR): <label-charging> <bar-capacity>
+format-charging = 電池: <label-charging>
 format-charging-underline =
 
 ;format-discharging-prefix = "BAT: "
 ;format-discharging = <animation-discharging> <label-discharging>
-format-discharging = BAT: <label-discharging> <bar-capacity>
+format-discharging = 電池: <label-discharging>
 format-discharging-underline =
 
 ;format-full-prefix = "FULL:"
@@ -767,13 +706,13 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
 
-format = <ramp> <label>
+format = <label>
 ;format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
+format-warn =<label-warn>
 ;format-warn-underline = ${self.format-underline}
 
-label = %temperature-c%
-label-warn = %temperature-c%
+label =熱: %temperature-c%
+label-warn =暑: %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 
