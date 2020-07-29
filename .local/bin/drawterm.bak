@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Draw rectangle on screen and open floating terminal
+
+rect=$(slop)
+bspc rule -a St --one-shot state=floating rectangle=$rect
+st -A 1 &
