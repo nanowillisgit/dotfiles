@@ -44,7 +44,7 @@ case "$choice" in
 		choice="$HOME/.config/sxiv/exec/key-handler"
 	;;
 	sxhkd)
-		st -A 1 -e nvim -O $HOME/.config/sxhkd/*
+		st -A 1 -e nvim -O $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.desk $HOME/.config/sxhkd/sxhkdrc.laptop
 		exit 1
 	;;
 	xresources)
