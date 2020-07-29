@@ -5,6 +5,9 @@
 # Launch terminal
 super + Return
 	st -A 1
+# Draw rectangle and open terminal there
+super + shift + Return
+	drawterm
 
 # PDF viewer
 super + z
@@ -154,6 +157,10 @@ super + {_,shift + }{1-9,0}
 #
 # preselect
 #
+
+# preselect rectangle to open floating application
+super + shift + space
+	drawfloat
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
