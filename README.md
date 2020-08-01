@@ -2,27 +2,21 @@
 
 Dotfile repository for bspwm plus a whole bunch of other programs
 
-## Program configs featured
-- `bspwm`
-- `dunst`
-- `fish` and optionally `oh-my-fish`
-- `mpv`
-- `neovim`
-- `picom`
-- `polybar`
-- `ranger`
-- `rofi`
-- `sxhkd`
-- `wpgtk`
-- `xmenu`
+## Programs featured
+- **Window Manager:**`bspwm`
+- **Hotkey Handler:**`sxhkd`
+- **Notifications:**`dunst`
+- **Shell:**`fish` and optionally `oh-my-fish`
+- **Editor:**`neovim`
+- **Window Compositor:**`picom`
+- **Panel:**`polybar`
+- **File Manager:**`ranger`
+- **Launcher:**`rofi`
+- **Colorscheme Handler:**`wpgtk`
+- **GUI Launcher/Info Handler:**`xmenu`
+- Various scripts called in the configs
 
-## Bare requirements to replicate my setup
-- `bspwm`
-- `dunst` (to be used with `libnotify`)
-- `wpgtk`
-- `picom`
-- `polybar`
-- `rofi`
+Read through the config files and check which other programs are used to replicate the setup (e.g. `ranger` requires `ueberzug` for image previews.)
 
 ### How wpgtk works here
 
