@@ -33,6 +33,47 @@ function dotfiles
 	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME --work-tree=$HOME $argv
 end
 
+
+
+
+
+
+########################################################
+#                                                      #
+# Essentally default args for most commonly used utils #
+#                                                      #
+########################################################
+
+# Default settings
+alias ls="exa -l --color=always --group-directories-first"
+
+# All files and dirs
+alias la="exa -la --color=always --group-directories-first"
+
+# Long format
+alias ll="exa -l --color=always --group-directories-first"
+
+# Tree format
+alias lt="exa -T --color=always --group-directories-first"
+
+# Dots only
+alias ldot='exa -a | grep "^\." --color=auto' 
+
+# Colorizing grep output
+alias grep="grep --color=auto"
+
+# mv interactive and verbose
+alias mv="mv -iv"
+
+# rm interactive and verbose
+alias rm="rm -iv"
+
+# cp interactive and verbose
+alias cp="cp -iv"
+
+# human readable df output
+alias df="df -h"
+
 # KEEP THIS ALIAS AS THE LAST ONE TO APPEAR IN THE FILE
 # Important for the alii `sed` command to parse the stream properly
 

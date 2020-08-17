@@ -49,6 +49,10 @@ super + grave
 super + shift + grave
 	scratchterm scfm
 
+# Rofi Powermenu
+ctrl + alt + Delete
+	powermenu
+
 #####################
 ## System Controls ##
 #####################

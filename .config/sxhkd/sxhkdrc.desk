@@ -23,4 +23,3 @@ XF86Tools
 	bspc rule -a St --one-shot state=floating rectangle=960x280+1950+470 desktop=VII && \
 	st -A 1 -e cava & \
 	bspc desktop VII --focus
-

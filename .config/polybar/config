@@ -504,6 +504,8 @@ format-connected-underline = priamry
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
+click-left = st -A 1 -e nmtui
+
 format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}

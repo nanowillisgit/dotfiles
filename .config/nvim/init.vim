@@ -1,90 +1,32 @@
 set nocompatible
 filetype off 
-" Specify a directory for plugins
+"
 " - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
+
 call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
-
-" Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
 Plug 'https://github.com/tpope/vim-surround'
-
-" Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' 
-
-" Distraction free vim writing
 Plug 'junegunn/goyo.vim'
-
-" Quicktex
-"Plug 'brennier/quicktex'
-
-" On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using a non-master branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
-" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
-
-" Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-" Unmanaged plugin (manually installed and updated)
-"Plug '~/my-prototype-plugin'
-
-" Pywal colors plugin
 Plug 'dylanaraps/wal.vim'
-
-" Pandoc auto-preview
-"Plug 'ragon000/vim-pandoc-live-preview'
-
-" LaTeX Plugin
 Plug 'lervag/vimtex'
-
-" LaTeX concealing
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
-
-" Markdown plugin
 Plug 'gabrielelana/vim-markdown'
-
-" Markdown live preview
 Plug 'suan/vim-instant-markdown'
-
-" Snippets plugin
-"Plug 'sirver/ultisnips'
-
-" Airline status bar
 Plug 'vim-airline/vim-airline'
-
-" Sxhkd highlight
 Plug 'kovetskiy/sxhkd-vim'
-
-" Airline Themes
-" Plug 'vim-airline/vim-airline-themes'
-
-" Neosnippets
-
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"
-"Japanese input
 Plug 'https://github.com/tyru/eskk.vim'
-
-" Fish script support
 Plug 'dag/vim-fish'
-
-" WPGTK theme
 Plug 'deviantfero/wpgtk.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'ap/vim-css-color'
 
 " Initialize plugin system
 call plug#end()
@@ -98,24 +40,26 @@ colorscheme wpgtkAlt
 let g:airline#extensions#tabline#enabled=1
 
 " Spell checking
-"map <F6> :setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
+" Clear tex log and debugging files on exit of .tex
 autocmd VimLeave *.tex !texclear %
 
 " Set line numbers
 set number
 set relativenumber
 
-" Airline tabs
+" Airline thene
 let g:airline#extensions#tabline#enabled = 1
-
 let g:airline_theme='wpgtk'
 
+" Split navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+nmap <C-o> :NERDTreeToggle<CR>
 
 " Vimtex configuration
 let g:tex_flavor='xelatex'
@@ -140,7 +84,6 @@ highlight Conceal guibg=NONE ctermbg=NONE
 " Allow for italic comments
 highlight Comment cterm=italic gui=italic
 
-nmap <C-o> :NERDTreeToggle<CR>
 
 " Detect sxhkd filetype
 au BufRead,BufNewFile sxhkd*	set filetype=sxhkd
@@ -161,6 +104,13 @@ autocmd FileType rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c
 autocmd BufWritePost *sxhkdrc.common !sxhkdreload
 autocmd BufWritePost *sxhkdrc.desk !sxhkdreload
 autocmd BufWritePost *sxhkdrc.laptop !sxhkdreload
+
+
+" Cursorline highlighting
+set cursorline
+set cursorcolumn
+hi CursorLine term=italic cterm=bold ctermbg=8 ctermfg=NONE
+hi CursorColumn term=bold cterm=bold ctermbg=8 ctermfg=NONE
 
 map <leader>c :w! \| !compiler <c-r>%<CR>
 "autocmd TextChanged,TextChangedI <buffer> silent write

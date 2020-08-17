@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Graphical menu to edit more frequently edited config files
+
+declare options=("reboot
+suspend
+hibernate
+poweroff
+quit")
+
+choice=$(echo -e "${options[@]}" | rofi -dmenu -i -p 'Power action')
+
+case "$choice" in
+	quit)
+		echo "Program terminated." && exit 1
+	;;
+	reboot)
+		sysmtemctl reboot ; exit 0
+	;;
+	suspend)
+		locknsuspend ; exit 0
+	;;
+	hibernate)
+		locknhibernate ; exit 0
+	;;
+	poweroff)
+		systemctl poweroff ; exit 0
+	;;
+	*)
+		exit 1
+	;;
+esac

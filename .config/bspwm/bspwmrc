@@ -1,23 +1,23 @@
 #! /bin/sh
 
-col0=#282a36
-col1=#ff5555
-col2=#50fa7b
-col3=#f1fa8c
-col4=#bd93f9
-col5=#ff79c6
-col6=#8be9fd
-col7=#bfbfbf
-col8=#4d4d4d
-col9=#ff6e67
-col10=#5af78e
-col11=#f4f99d
-col12=#caa9fa
-col13=#ff92d0 
-col14=#9aedfe
-col15=#f8f8f2
-colinac=#cb5852
-colact=#8c3c38
+col0=#2f2f44
+col1=#a863ff
+col2=#bc37ff
+col3=#2864ff
+col4=#e369ff
+col5=#f02aff
+col6=#ff487c
+col7=#ffc9fd
+col8=#5e4d5e
+col9=#c992ff
+col10=#c564ff
+col11=#84a5ff
+col12=#f1a2ff
+col13=#ea96ff 
+col14=#ff77a2
+col15=#ffffff
+colinac=#9d50cb
+colact=#6c378c
 
 ####################################
 ###### Getting things started ######
@@ -41,7 +41,7 @@ bspc config focused_border_color "$col2"
 bspc config presel_feedback_color "$col3"
 
 bspc config border_width         4
-bspc config window_gap          20
+bspc config window_gap          10
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
@@ -52,8 +52,10 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Transmission-gtk desktop=X
 bspc rule -a qBittorrent desktop=X 
 bspc rule -a TelegramDesktop state=floating desktop=IX 
-bspc rule -a Anki state=floating
+bspc rule -a Anki state=floating rectangle=1611x997+166+62
 bspc rule -a Pixinsight state=floating
+bspc rule -a Gimp state=floating
+bspc rule -a subs2srs state=floating rectangle=1038x865+398+106
 
 # Scratchpad rules
 bspc rule -a scterm sticky=on state=floating rectangle=710x360+1195+710 hidden=on
@@ -71,4 +73,4 @@ then
 fi
 
 ## Window swallowing
- pidof bspswallow || bspswallow &
+pidof bspswallow || bspswallow &
