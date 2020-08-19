@@ -30,7 +30,7 @@ alert = #bd2c40
 
 [bar/two]
 monitor = ${env:MONITOR:DisplayPort-1}
-width = 66.0%
+width = 58.0%
 height = 25
 ;offset-x = 1%
 ;offset-y = 1%

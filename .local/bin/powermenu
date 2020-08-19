@@ -8,7 +8,7 @@ hibernate
 poweroff
 quit")
 
-choice=$(echo -e "${options[@]}" | rofi -dmenu -i -p 'Power action')
+choice=$(echo -e "${options[@]}" | rofi -dmenu -lines 5 -i -p 'Power action')
 
 case "$choice" in
 	quit)

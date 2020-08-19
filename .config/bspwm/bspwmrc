@@ -1,23 +1,23 @@
 #! /bin/sh
 
-col0=#2f2f44
-col1=#a863ff
-col2=#bc37ff
-col3=#2864ff
-col4=#e369ff
-col5=#f02aff
-col6=#ff487c
-col7=#ffc9fd
-col8=#5e4d5e
-col9=#c992ff
-col10=#c564ff
-col11=#84a5ff
-col12=#f1a2ff
-col13=#ea96ff 
-col14=#ff77a2
-col15=#ffffff
-colinac=#9d50cb
-colact=#6c378c
+col0=#2d2426
+col1=#d49369
+col2=#8ac1d4
+col3=#CE9078
+col4=#6C7986
+col5=#f68d5c
+col6=#91bfcf
+col7=#ded8d6
+col8=#6c5c5d
+col9=#ffdea8
+col10=#93d8f1
+col11=#ffb186
+col12=#7c9dbd
+col13=#ffba73 
+col14=#caf0fd
+col15=#fffcfa
+colinac=#cb945c
+colact=#8c663f
 
 ####################################
 ###### Getting things started ######
@@ -26,8 +26,8 @@ colact=#6c378c
 # Arrange monitors and create desktops
 if [ $(hostname) = "astro" ]; then
 	setupmonitors
-	bspc monitor HDMI-A-0 -d I II III IV V
-	bspc monitor DisplayPort-1 -d VI VII VIII IX X
+	bspc monitor HDMI-A-0 -d I II III IV V VI VII
+	bspc monitor DisplayPort-1 -d  VIII IX X
 elif [ $(hostname) = "EVA-01" ]; then
 	bspc monitor -d I II III IV V VI VII VIII IX X
 fi
@@ -52,7 +52,7 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Transmission-gtk desktop=X
 bspc rule -a qBittorrent desktop=X 
 bspc rule -a TelegramDesktop state=floating desktop=IX 
-bspc rule -a Anki state=floating rectangle=1611x997+166+62
+bspc rule -a Anki state=floating
 bspc rule -a Pixinsight state=floating
 bspc rule -a Gimp state=floating
 bspc rule -a subs2srs state=floating rectangle=1038x865+398+106

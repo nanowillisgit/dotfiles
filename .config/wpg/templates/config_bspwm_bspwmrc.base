@@ -26,8 +26,8 @@ colact={inactive}
 # Arrange monitors and create desktops
 if [ $(hostname) = "astro" ]; then
 	setupmonitors
-	bspc monitor HDMI-A-0 -d I II III IV V
-	bspc monitor DisplayPort-1 -d VI VII VIII IX X
+	bspc monitor HDMI-A-0 -d I II III IV V VI VII
+	bspc monitor DisplayPort-1 -d  VIII IX X
 elif [ $(hostname) = "EVA-01" ]; then
 	bspc monitor -d I II III IV V VI VII VIII IX X
 fi
@@ -52,7 +52,7 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Transmission-gtk desktop=X
 bspc rule -a qBittorrent desktop=X 
 bspc rule -a TelegramDesktop state=floating desktop=IX 
-bspc rule -a Anki state=floating rectangle=1611x997+166+62
+bspc rule -a Anki state=floating
 bspc rule -a Pixinsight state=floating
 bspc rule -a Gimp state=floating
 bspc rule -a subs2srs state=floating rectangle=1038x865+398+106

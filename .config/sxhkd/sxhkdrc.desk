@@ -10,16 +10,16 @@ XF86Explorer
 
 # Launch file manager on desktop VI and focuses desktop VI
 super + shift + e
-	bspc rule -a St --one-shot state=floating rectangle=800x450+600+300 desktop=VI focus=on && st -A 1 -e ranger & bspc desktop VI --focus
+	bspc rule -a St --one-shot state=floating rectangle=800x450+600+300 desktop=VIII focus=on && st -A 1 -e ranger & bspc desktop VIII --focus
 
 # xmenu
 super + alt + space
 	$HOME/.config/xmenu/xmenu.sh
 
 XF86Tools
-	bspc rule -a St --one-shot state=floating rectangle=690x350+1950+75 desktop=VII && \
+	bspc rule -a St --one-shot state=floating rectangle=690x350+1950+75 desktop=VIII && \
 	st -A 1 -e pacmixer & \
 	sleep .1s && \
-	bspc rule -a St --one-shot state=floating rectangle=960x280+1950+470 desktop=VII && \
+	bspc rule -a St --one-shot state=floating rectangle=960x280+1950+470 desktop=VIII && \
 	st -A 1 -e cava & \
-	bspc desktop VII --focus
+	bspc desktop VIII --focus
