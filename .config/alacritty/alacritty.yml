@@ -334,14 +334,14 @@ background_opacity: 1.0
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  #style: Block
+  style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -585,28 +585,28 @@ key_bindings:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x312d36'
-    foreground: '0xc9d9ff'
+    background: '0x2d2426'
+    foreground: '0xded8d6'
   cursor:
-    text:       '0x312d36'
-    cursor:     '0xc9d9ff'
+    text:       '0x2d2426'
+    cursor:     '0xded8d6'
   normal:
-    black:      '0x312d36'
-    red:        '0xff3144'
-    green:      '0xff5966'
-    yellow:     '0x5797ff'
-    blue:       '0x859aff'
-    magenta:    '0xe398ff'
-    cyan:       '0x9dbdff'
-    white:      '0xc9d9ff'
+    black:      '0x2d2426'
+    red:        '0xd49369'
+    green:      '0x8ac1d4'
+    yellow:     '0xCE9078'
+    blue:       '0x6C7986'
+    magenta:    '0xf68d5c'
+    cyan:       '0x91bfcf'
+    white:      '0xded8d6'
   bright:
-    black:      '0x676f7f'
-    red:        '0xff5464'
-    green:      '0xff5e6a'
-    yellow:     '0x92bbff'
-    blue:       '0xa1b0ff'
-    magenta:    '0xebb3ff'
-    cyan:       '0xb7ceff'
-    white:      '0xe4ecff'
+    black:      '0x6c5c5d'
+    red:        '0xffdea8'
+    green:      '0x93d8f1'
+    yellow:     '0xffb186'
+    blue:       '0x7c9dbd'
+    magenta:    '0xffba73'
+    cyan:       '0xcaf0fd'
+    white:      '0xfffcfa'
 
 # END ACE

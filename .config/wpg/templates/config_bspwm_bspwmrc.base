@@ -64,12 +64,12 @@ bspc rule -a scfm sticky=on state=floating rectangle=710x360+1195+410 hidden=on
 ## Launch scratchpad terminal if not already present
 if [ -z "$(xdotool search --class scterm)" ];
 then
-	$TERM --class scterm
+	alacritty --class alacritty,scterm &
 fi
 # Same for scratchpad file manager
 if [ -z "$(xdotool search --class scfm)" ];
 then
-	$TERM --class scfm -e ranger
+	alacritty --class alacritty,scfm -e ranger &
 fi
 
 ## Window swallowing

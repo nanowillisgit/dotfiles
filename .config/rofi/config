@@ -3,10 +3,10 @@ rofi.width:                          35
 rofi.lines:                          10
 rofi.columns:                        1
 rofi.font:                           Terminus Bold 12
-rofi.color-normal:                   #312d36, #e4ecff, #312d36, #7495cb, #e4ecff
-rofi.color-urgent:                   #312d36, #d6b48d, #22231D, #d6b48d, #e4ecff
-rofi.color-active:                   #312d36, #b7ceff, #312d36, #b7ceff, #312d36
-rofi.color-window:                   #312d36, #7495cb, #50668c
+rofi.color-normal:                   #2d2426, #fffcfa, #2d2426, #637d97, #fffcfa
+rofi.color-urgent:                   #2d2426, #d6b48d, #22231D, #d6b48d, #fffcfa
+rofi.color-active:                   #2d2426, #caf0fd, #2d2426, #caf0fd, #2d2426
+rofi.color-window:                   #2d2426, #637d97, #445667
 rofi.bw:                             5
 rofi.location:                       0
 rofi.padding:                        5
