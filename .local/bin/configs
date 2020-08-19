@@ -2,7 +2,8 @@
 
 # Graphical menu to edit more frequently edited config files
 
-declare options=("bspwm
+declare options=("alacritty
+bspwm
 dunst
 nvim
 polybar
@@ -18,6 +19,9 @@ choice=$(echo -e "${options[@]}" | rofi -dmenu -i -p 'Edit config file: ')
 case "$choice" in
 	quit)
 		echo "Program terminated." && exit 1
+	;;
+	alacritty)
+		choice="$HOME/.config/alacritty/alacritty.yml"
 	;;
 	bspwm)
 		choice="$HOME/.config/wpg/templates/config_bspwm_bspwmrc.base"
@@ -44,8 +48,8 @@ case "$choice" in
 		choice="$HOME/.config/sxiv/exec/key-handler"
 	;;
 	sxhkd)
-		st -A 1 -e nvim -O $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.desk $HOME/.config/sxhkd/sxhkdrc.laptop
-		exit 1
+		alacritty -e nvim -O $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.desk $HOME/.config/sxhkd/sxhkdrc.laptop
+		exit 0
 	;;
 	xresources)
 		choice="$HOME/.Xresources"
@@ -54,4 +58,4 @@ case "$choice" in
 		exit 1
 	;;
 esac
-st -A 1 -e nvim "$choice"
+alacritty -e nvim "$choice"

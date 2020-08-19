@@ -4,7 +4,8 @@
 
 # Launch terminal
 super + Return
-	st -A 1
+	alacritty
+
 # Draw rectangle and open terminal there
 super + shift + Return
 	drawterm
@@ -26,7 +27,7 @@ super + e
 
 # Network manager
 super + F1
-	st -A 1 -e nmtui
+	alacritty -e nmtui
 
 # Launch wallpaper picker script (requires sxiv)
 super + shift + w
@@ -38,7 +39,7 @@ super + ctrl + v
 
 # Launch file manager tiled 
 super + r
-	bspc rule -a St --one-shot state=pseudo_tiled rectangle=700x350 split_ratio=0.65 && st -A 1 -e ranger &
+	bspc rule -a Alacritty --one-shot state=pseudo_tiled rectangle=700x350 split_ratio=0.65 && alacritty -e ranger &
 
 
 # Scratchpad terminal

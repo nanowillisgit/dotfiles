@@ -6,6 +6,6 @@ rect=$(slop -b 5)
 if [ -z "$rect" ]; then
 	exit 1
 else 
-	bspc rule -a St --one-shot state=floating rectangle=$rect
-	st -A 1 &
+	bspc rule -a Alacritty --one-shot state=floating rectangle=$rect
+	$TERM &
 fi

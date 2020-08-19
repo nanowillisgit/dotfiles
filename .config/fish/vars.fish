@@ -11,6 +11,7 @@ set -gx SXHKD_SHELL dash
 #Export bat theme
 set -gx BAT_THEME base16
 
-set -gx TERM st
+set -g TERM alacritty
+set -gx TERMINAL alacritty
 
 set -gx W3MIMGDISPLAY_PATH "/usr/lib/w3m/w3mimgdisplay"

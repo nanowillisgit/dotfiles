@@ -1,23 +1,23 @@
 #! /bin/sh
 
-col0=#2d2426
-col1=#d49369
-col2=#8ac1d4
-col3=#CE9078
-col4=#6C7986
-col5=#f68d5c
-col6=#91bfcf
-col7=#ded8d6
-col8=#6c5c5d
-col9=#ffdea8
-col10=#93d8f1
-col11=#ffb186
-col12=#7c9dbd
-col13=#ffba73 
-col14=#caf0fd
-col15=#fffcfa
-colinac=#cb945c
-colact=#8c663f
+col0=#312d36
+col1=#ff3144
+col2=#ff5966
+col3=#5797ff
+col4=#859aff
+col5=#e398ff
+col6=#9dbdff
+col7=#c9d9ff
+col8=#676f7f
+col9=#ff5464
+col10=#ff5e6a
+col11=#92bbff
+col12=#a1b0ff
+col13=#ebb3ff 
+col14=#b7ceff
+col15=#e4ecff
+colinac=#7495cb
+colact=#50668c
 
 ####################################
 ###### Getting things started ######
@@ -33,6 +33,7 @@ elif [ $(hostname) = "EVA-01" ]; then
 fi
 
 # Program startup routine
+pidof sxhkd || sxhkd -c $HOME/.config/sxhkd/sxhkdrc.common $HOME/.config/sxhkd/sxhkdrc.desk &
 bspstart
 
 # Set some colors 
@@ -64,12 +65,12 @@ bspc rule -a scfm sticky=on state=floating rectangle=710x360+1195+410 hidden=on
 ## Launch scratchpad terminal if not already present
 if [ -z "$(xdotool search --class scterm)" ];
 then
-	st -A 1 -c scterm
+	$TERM --class scterm
 fi
 # Same for scratchpad file manager
 if [ -z "$(xdotool search --class scfm)" ];
 then
-	st -A 1 -c scfm -e ranger
+	$TERM --class scfm -e ranger
 fi
 
 ## Window swallowing
