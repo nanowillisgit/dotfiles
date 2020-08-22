@@ -3,6 +3,7 @@
 Dotfile repository for bspwm plus a whole bunch of other programs
 
 ## Programs featured
+- **Terminal Emulator:** `alacritty`
 - **Window Manager:**`bspwm`
 - **Hotkey Handler:**`sxhkd`
 - **Notifications:**`dunst`
@@ -11,6 +12,7 @@ Dotfile repository for bspwm plus a whole bunch of other programs
 - **Window Compositor:**`picom`
 - **Panel:**`polybar`
 - **File Manager:**`ranger`
+- **Music Player:** `ncmpcpp` with `mpd`
 - **Launcher:**`rofi`
 - **Colorscheme Handler:**`wpgtk`
 - **GUI Launcher/Info Handler:**`xmenu`
