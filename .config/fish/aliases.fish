@@ -44,13 +44,14 @@ end
 #                                                      #
 ########################################################
 
-# Default settings
-alias ls="exa -l --color=always --group-directories-first"
 
-# All files and dirs
+# Alias lsx: Fancy ls
+alias lsx="exa -l --color=always --group-directories-first"
+
+# All files and dirs fancy ls
 alias la="exa -la --color=always --group-directories-first"
 
-# Long format
+# Long format fancy ls
 alias ll="exa -l --color=always --group-directories-first"
 
 # Tree format
@@ -73,6 +74,9 @@ alias cp="cp -iv"
 
 # human readable df output
 alias df="df -h"
+
+# Alias mz: Synonym for ncmpcpp
+alias mz="ncmpcpp"
 
 # KEEP THIS ALIAS AS THE LAST ONE TO APPEAR IN THE FILE
 # Important for the alii `sed` command to parse the stream properly

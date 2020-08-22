@@ -26,3 +26,6 @@ if [ $(hostname) = "astro" ]; then
 else
 	polybar laptop -c $HOME/.config/polybar/config &
 fi
+
+# mpd 
+pidof mpd || mpd && mpc update

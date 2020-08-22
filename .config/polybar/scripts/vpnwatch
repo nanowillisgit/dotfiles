@@ -19,7 +19,7 @@ fi
 
 echo "$state" > /tmp/piastate
 
-if [ "$(ip a | grep "tun0")" != "" ] ; then
+if [ "$(ip a | grep "wgpia0")" != "" ] ; then
 	echo "VPN ${state}: $(piactl get vpnip)(v)"
 else
 	echo "VPN ${state}: $(piactl get vpnip)(u)"

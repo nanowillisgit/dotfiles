@@ -30,7 +30,7 @@ alert = #bd2c40
 
 [bar/two]
 monitor = ${env:MONITOR:DisplayPort-1}
-width = 58.0%
+width = 75.0%
 height = 25
 ;offset-x = 1%
 ;offset-y = 1%
@@ -55,7 +55,7 @@ font-0 = xos4 Terminus:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = Noto Sans CJK JP Medium:style=Medium:pixelsize=9;1
 
-modules-left = bspwm filesystem memory cpu vpn-watcher 
+modules-left = bspwm mpd filesystem memory cpu vpn-watcher 
 ;modules-center = 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 ;modules-right = date
@@ -305,7 +305,7 @@ ws-icon-9 = X;十
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <label-song>
 
 icon-prev = 
 icon-stop = 

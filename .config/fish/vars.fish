@@ -2,6 +2,9 @@
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
+# Configuration home
+set -gx XDG_CONFIG_HOME "/home/aatmun/.config"
+
 # Export default fzf options
 set -gx FZF_DEFAULT_OPTS "--reverse --color=16"
 

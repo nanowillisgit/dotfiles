@@ -7,5 +7,5 @@ if [ -z "$rect" ]; then
 	exit 1
 else 
 	bspc rule -a Alacritty --one-shot state=floating rectangle=$rect
-	$TERM &
+	alacritty &
 fi

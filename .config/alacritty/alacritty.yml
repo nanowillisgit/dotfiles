@@ -117,7 +117,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    family: Terminus
+    family: xos4 Terminess Powerline
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -180,7 +180,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -585,28 +585,28 @@ key_bindings:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x2d2426'
-    foreground: '0xded8d6'
+    background: '0x23293a'
+    foreground: '0xa77957'
   cursor:
-    text:       '0x2d2426'
-    cursor:     '0xded8d6'
+    text:       '0x23293a'
+    cursor:     '0xa77957'
   normal:
-    black:      '0x2d2426'
-    red:        '0xd49369'
-    green:      '0x8ac1d4'
-    yellow:     '0xCE9078'
-    blue:       '0x6C7986'
-    magenta:    '0xf68d5c'
-    cyan:       '0x91bfcf'
-    white:      '0xded8d6'
+    black:      '0x23293a'
+    red:        '0xff0113'
+    green:      '0x09e571'
+    yellow:     '0xff4723'
+    blue:       '0xd0a57f'
+    magenta:    '0xdf282e'
+    cyan:       '0xc90211'
+    white:      '0xa77957'
   bright:
-    black:      '0x6c5c5d'
-    red:        '0xffdea8'
-    green:      '0x93d8f1'
-    yellow:     '0xffb186'
-    blue:       '0x7c9dbd'
-    magenta:    '0xffba73'
-    cyan:       '0xcaf0fd'
-    white:      '0xfffcfa'
+    black:      '0x3e5874'
+    red:        '0xff8591'
+    green:      '0x58f5a2'
+    yellow:     '0xffa58a'
+    blue:       '0xd3bdaa'
+    magenta:    '0xff9497'
+    cyan:       '0xe9525e'
+    white:      '0xfff7d1'
 
 # END ACE
