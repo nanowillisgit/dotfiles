@@ -1,23 +1,23 @@
 #! /bin/sh
 
-col0=#23293a
-col1=#ff0113
-col2=#09e571
-col3=#ff4723
-col4=#d0a57f
-col5=#df282e
-col6=#c90211
-col7=#a77957
-col8=#3e5874
-col9=#ff8591
-col10=#58f5a2
-col11=#ffa58a
-col12=#d3bdaa
-col13=#ff9497 
-col14=#e9525e
-col15=#fff7d1
-colinac=#cb6a74
-colact=#8c494f
+col0=#2f2f44
+col1=#a863ff
+col2=#bc37ff
+col3=#2864ff
+col4=#e369ff
+col5=#f02aff
+col6=#ff487c
+col7=#ffc9fd
+col8=#5e4d5e
+col9=#c992ff
+col10=#c564ff
+col11=#84a5ff
+col12=#f1a2ff
+col13=#ea96ff 
+col14=#ff77a2
+col15=#ffffff
+colinac=#c081cb
+colact=#84598c
 
 ####################################
 ###### Getting things started ######

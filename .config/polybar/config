@@ -30,7 +30,7 @@ alert = #bd2c40
 
 [bar/two]
 monitor = ${env:MONITOR:DisplayPort-1}
-width = 75.0%
+width = 100.0%
 height = 25
 ;offset-x = 1%
 ;offset-y = 1%
@@ -46,7 +46,7 @@ border-size = 4
 border-color = #00000000
 
 padding-left = 0
-padding-right = 0
+padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
@@ -55,9 +55,9 @@ font-0 = xos4 Terminus:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = Noto Sans CJK JP Medium:style=Medium:pixelsize=9;1
 
-modules-left = bspwm mpd filesystem memory cpu vpn-watcher 
-;modules-center = 
-;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-left = bspwm mpd
+modules-center = vpn-watcher
+modules-right = filesystem memory cpu
 ;modules-right = date
 ;modules-center = date filesystem memory cpu pulseaudio -combined
 
@@ -363,7 +363,7 @@ bar-empty-foreground = ${colors.foreground-alt}
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 3
 
 ; Available tags:
 ;   <label> (default)
@@ -375,6 +375,7 @@ interval = 2
 format = <label>
 ;format-prefix = "CPU:"
 format-prefix-foreground = ${colors.foreground}
+padding-right = 2
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load averaged over all cores
@@ -779,5 +780,6 @@ type = custom/script
 exec = /home/aatmun/.config/polybar/scripts/vpnwatch
 interval = 3
 click-left = notify-send -i "~/.config/icons/vpn-48.png" "$(piactl get connectionstate)" "$(piactl get region)"
+padding-right = 2
 
 ; vim:ft=dosini

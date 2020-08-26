@@ -54,6 +54,18 @@ super + shift + grave
 ctrl + alt + Delete
 	powermenu
 
+################################
+## Music control with mpc/mpd ##
+################################
+
+XF86AudioStop
+	mpc stop
+
+XF86AudioNext
+	mpc next
+
+XF86AudioPrev
+	mpc prev
 
 #####################
 ## System Controls ##

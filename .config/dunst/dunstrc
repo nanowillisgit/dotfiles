@@ -1,23 +1,23 @@
 [colors]
-	background = "#23293a"
-	foreground = "#fff7d1"
-	one = "#ff0113"
-	two = "#09e571"
-	three = "#ff4723"
-	four = "#d0a57f"
-	five = "#df282e"
-	six = "#c90211"
-	seven = "#a77957"
-	eight = "#3e5874"
-	nine = "#ff8591"
-	ten = "#58f5a2"
-	eleven = "#ffa58a"
-	twelve = "#d3bdaa"
-	thirteen = "#ff9497"
-	fourteen = "#e9525e"
-	fifteen = "#fff7d1"
-	active = "#cb6a74"
-	inactive = "#8c494f"
+	background = "#2f2f44"
+	foreground = "#ffffff"
+	one = "#a863ff"
+	two = "#bc37ff"
+	three = "#2864ff"
+	four = "#e369ff"
+	five = "#f02aff"
+	six = "#ff487c"
+	seven = "#ffc9fd"
+	eight = "#5e4d5e"
+	nine = "#c992ff"
+	ten = "#c564ff"
+	eleven = "#84a5ff"
+	twelve = "#f1a2ff"
+	thirteen = "#ea96ff"
+	fourteen = "#ff77a2"
+	fifteen = "#ffffff"
+	active = "#c081cb"
+	inactive = "#84598c"
 
 [global]
     ### Display ###
@@ -76,7 +76,7 @@
     history_length = 20
 
     ### Misc/Advanced ###
-    dmenu = /usr/bin/rofi -show run -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -p dunst:
     browser = /usr/bin/firefox
     always_run_script = true
     title = Dunst

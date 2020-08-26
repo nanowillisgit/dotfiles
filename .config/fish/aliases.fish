@@ -10,7 +10,7 @@ end
 
 # Alias vzh: Select file(s) from ~ and hdd1 in fzf; open in nvim buffer(s)
 function vzh
-     du -a $HOME /exthdd 2>/dev/null | awk '{print $2}' | fzf --multi --preview 'bat --style=numbers --color=always --line-range :100 {}' --preview-window=right:73% | xargs -r $EDITOR -O
+     du -a $HOME 2>/dev/null | awk '{print $2}' | fzf --multi --preview 'bat --style=numbers --color=always --line-range :100 {}' --preview-window=right:73% | xargs -r $EDITOR -O
 end
 
 # Alias med: cd into media directory and open ranger

@@ -23,3 +23,7 @@ XF86Tools
 	bspc rule -a Alacritty --one-shot state=floating rectangle=960x280+1950+470 desktop=VIII && \
 	alacritty -e cava & \
 	bspc desktop VIII --focus
+
+### Music control
+XF86AudioPlay
+	pidof ncmpcpp || musacstartup > /dev/null ; mpc toggle
