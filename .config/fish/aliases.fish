@@ -13,15 +13,6 @@ function vzh
      du -a $HOME 2>/dev/null | awk '{print $2}' | fzf --multi --preview 'bat --style=numbers --color=always --line-range :100 {}' --preview-window=right:73% | xargs -r $EDITOR -O
 end
 
-# Alias med: cd into media directory and open ranger
-function med
-	cd $HOME/hdd1/media && ranger
-end
-
-# Alias tv: cd into media/tv directory and open ranger
-function tv
-	cd $HOME/hdd1/media/tv && ranger
-end
 
 # Alias pict: Open all images in ~/Pictures in sxiv
 function pict
@@ -33,9 +24,10 @@ function dotfiles
 	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME --work-tree=$HOME $argv
 end
 
-
-
-
+# Alias iconinvert: Command to invert icon png file
+function iconinvert
+	convert $argv -channel RGB -negate $argv
+end
 
 
 ########################################################
@@ -45,8 +37,8 @@ end
 ########################################################
 
 
-# Alias lsx: Fancy ls
-alias lsx="exa -l --color=always --group-directories-first"
+# Alias lf: Fancy ls
+alias lf="exa -l --color=always --group-directories-first"
 
 # All files and dirs fancy ls
 alias la="exa -la --color=always --group-directories-first"
@@ -76,7 +68,7 @@ alias cp="cp -iv"
 alias df="df -h"
 
 # Alias mz: Synonym for ncmpcpp
-alias mz="ncmpcpp"
+alias msc="ncmpcpp"
 
 # KEEP THIS ALIAS AS THE LAST ONE TO APPEAR IN THE FILE
 # Important for the alii `sed` command to parse the stream properly

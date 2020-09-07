@@ -1,8 +1,7 @@
 set nocompatible
 filetype off 
-"
-" - For Neovim: ~/.local/share/nvim/plugged
 
+"{{{1 Plugin installations
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -27,40 +26,75 @@ Plug 'dag/vim-fish'
 Plug 'deviantfero/wpgtk.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'ap/vim-css-color'
+Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()
+
+"}}}1
+
+
+"{{{1 Eyecandy and GUI configuration
+
+" Syntax highlight
 syntax on
 
-
-" Set color scheme
+" Color scheme
 colorscheme wpgtkAlt
 
 " Configure airline
 let g:airline#extensions#tabline#enabled=1
 
-" Spell checking
-map <F6> :setlocal spell! spelllang=en_us<CR>
-
-" Clear tex log and debugging files on exit of .tex
-autocmd VimLeave *.tex !texclear %
+" Airline thene
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='wpgtk'
 
 " Set line numbers
 set number
 set relativenumber
 
-" Airline thene
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='wpgtk'
+" Set conceal highlight colors
+highlight Conceal guibg=NONE ctermbg=NONE
 
-" Split navigation
+" Allow for italic comments
+highlight Comment cterm=italic gui=italic
+
+"}}}1
+
+
+"{{{1 Quality of life keybindings
+
+"Split navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nmap <C-o> :NERDTreeToggle<CR>
+"nmap <C-o> :NERDTreeToggle<CR>
 
+nnoremap <C-o> :set cursorline! cursorcolumn!<CR>
+
+" Saving
+nnoremap zz :update<cr>
+nnoremap <C-e> :x<cr>
+
+" Normal mode
+inoremap jk <esc>
+inoremap kj <esc>
+
+" Compiling markup types
+map <leader>c :w! \| !compiler <c-r>%<CR>
+
+" Markdown
+"nnoremap <buffer><nowait><silent> <C-w> :<c-u>silent call system('pandoc '.expand('%:p:S').' -o '.expand('%:p:r:S').'.pdf')<cr>
+
+" Spell checking
+map <F6> :setlocal spell! spelllang=en_us<CR>
+
+"}}}1
+
+
+"{{{1 Vimtex configuration
 " Vimtex configuration
 let g:tex_flavor='xelatex'
 let g:vimtex_view_method='zathura'
@@ -70,59 +104,56 @@ let g:tex_conceal='abdgm'
 let g:livepreview_previewer = 'zathura'
 let g:livepreview_engine='xelatex'
 let g:Tex_CompileRule_pdf='pdflatex --interaction=nonstopmode $*'
+"}}}1
 
-"" Ultisnips config
+
+"{{{1 Ultisnips configuration
 let g:UltiSnipsSnippetsDir="~/.vim/myUltiSnips"
 "let g:UltiSnipsSnippetDirectories = ['myUltiSnips']
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<space><space>"
 "let g:UltiSnipsJumpBackwardTrigger = "<tab><tab>"
+nnoremap <C-b> :UltiSnipsEdit<cr>
+"}}}1
 
-" Set conceal highlight colors
-highlight Conceal guibg=NONE ctermbg=NONE
 
-" Allow for italic comments
-highlight Comment cterm=italic gui=italic
+"{{{1 Autocommands
 
+" Clear tex log and debugging files on exit of .tex
+autocmd VimLeave *.tex !texclear %
 
 " Detect sxhkd filetype
 au BufRead,BufNewFile sxhkd*	set filetype=sxhkd
-
-nnoremap zz :update<cr>
-nnoremap <C-e> :x<cr>
-
-nnoremap <buffer><nowait><silent> <C-w> :<c-u>silent call system('pandoc '.expand('%:p:S').' -o '.expand('%:p:r:S').'.pdf')<cr>
-
-nnoremap <C-b> :UltiSnipsEdit<cr>
-
-nnoremap <buffer><nowait><silent> <C-k> :<c-u>silent call system('echo require(rmarkdown); render(<c-r>%) R --vanilla')<cr>
-
-" Compile R Markdown files
-autocmd FileType rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 " Restart sxhkd when writing any of the config files
 autocmd BufWritePost *sxhkdrc.common !sxhkdreload
 autocmd BufWritePost *sxhkdrc.desk !sxhkdreload
 autocmd BufWritePost *sxhkdrc.laptop !sxhkdreload
+au BufRead,BufNewFile init.vim	set foldmethod=marker
+
+"}}}1
 
 
+"{{{1 Cursorline Highlighting
 " Cursorline highlighting
 set cursorline
 set cursorcolumn
 hi CursorLine term=italic cterm=bold ctermbg=8 ctermfg=NONE
 hi CursorColumn term=bold cterm=bold ctermbg=8 ctermfg=NONE
+"}}}1
 
-map <leader>c :w! \| !compiler <c-r>%<CR>
-"autocmd TextChanged,TextChangedI <buffer> silent write
 
-" Some keybindings
-inoremap jk <esc>
-inoremap kj <esc>
-
+"{{{1 eskk configuration
 let g:eskk#large_dictionary = {
 			\ 'path': '/usr/share/skk/SKK-JISYO.L',
 			\ 'sorted': 1,
 			\ 'encoding': 'euc-jp'
 			\}
+"}}}1
 
+"{{{1 vimwiki configuration
+let g:vimwiki_list = [{'path': '~/.vimwiki/vimwiki/', 'syntax': 'default', 'ext': '.vmk'}]
+"}}}1
+
+set foldmethod=syntax
 filetype plugin indent on

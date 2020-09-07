@@ -1,29 +1,8 @@
-[colors]
-	background = "#2f2f44"
-	foreground = "#ffffff"
-	one = "#a863ff"
-	two = "#bc37ff"
-	three = "#2864ff"
-	four = "#e369ff"
-	five = "#f02aff"
-	six = "#ff487c"
-	seven = "#ffc9fd"
-	eight = "#5e4d5e"
-	nine = "#c992ff"
-	ten = "#c564ff"
-	eleven = "#84a5ff"
-	twelve = "#f1a2ff"
-	thirteen = "#ea96ff"
-	fourteen = "#ff77a2"
-	fifteen = "#ffffff"
-	active = "#c081cb"
-	inactive = "#84598c"
-
 [global]
     ### Display ###
 
     monitor = 0
-    follow = mouse
+    follow = keyboard
 
     geometry = "540x90-10+40"
     indicate_hidden = yes
@@ -35,8 +14,8 @@
     horizontal_padding = 20
     frame_width = 3
 
-    frame_color = colors.active
-    separator_color = colors.active
+    frame_color = "#ba414b"
+    separator_color = "active"
     sort = yes
     idle_threshold = 120
 
@@ -67,7 +46,7 @@
     show_indicators = yes
 
     ### Icons ###
-    icon_position = leftS
+    icon_position = left
     max_icon_size = 75
     icon_path = ~/.config/icons/:~/.config/
 
@@ -93,19 +72,19 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = colors.background
-    foreground = colors.foreground
-    frame_color = colors.inactive
+    background = "#23293a"
+    foreground = "#fff7d1"
+    frame_color = "#7f2d33"
     timeout = 10
 
 [urgency_normal]
-    background = colors.background
-    foreground = colors.foreground
-    frame_color = colors.active
+    background = "#23293a"
+    foreground = "#fff7d1"
+    frame_color = "#ba414b"
     timeout = 10
 
 [urgency_critical]
-    background = colors.background
-    foreground = colors.foreground
+    background = "#23293a"
+    foreground = "#fff7d1"
     frame_color = "#ff0000"
     timeout = 0

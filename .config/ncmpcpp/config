@@ -174,4 +174,4 @@ colors_enabled = "yes"
 #
 #active_window_border = "red"
 #
-execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
+execute_on_song_change = notify-send --icon="~/.config/icons/music-player.png" --urgency=normal "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
