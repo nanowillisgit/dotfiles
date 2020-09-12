@@ -4,7 +4,7 @@
 @define-color fg_color #fff7d1;
 @define-color base_color #ff0113;
 @define-color text_color #fff7d1;
-@define-color selected_bg_color #ba414b;
+@define-color selected_bg_color #46c381;
 @define-color selected_fg_color #fff7d1;
 @define-color tooltip_bg_color #23293a;
 @define-color tooltip_fg_color #fff7d1;
@@ -64,3 +64,4 @@
 @define-color wm_title_unfocused @theme_text_color;
 @define-color wm_border_focused @border_color;
 @define-color wm_border_unfocused @border_color;
+@import 'colors.css';

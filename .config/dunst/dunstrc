@@ -14,7 +14,7 @@
     horizontal_padding = 20
     frame_width = 3
 
-    frame_color = "#ba414b"
+    frame_color = "#46c381"
     separator_color = "active"
     sort = yes
     idle_threshold = 120
@@ -74,13 +74,13 @@
 [urgency_low]
     background = "#23293a"
     foreground = "#fff7d1"
-    frame_color = "#7f2d33"
+    frame_color = "#308659"
     timeout = 10
 
 [urgency_normal]
     background = "#23293a"
     foreground = "#fff7d1"
-    frame_color = "#ba414b"
+    frame_color = "#46c381"
     timeout = 10
 
 [urgency_critical]

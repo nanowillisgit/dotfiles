@@ -54,11 +54,10 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Transmission-gtk desktop=X
 bspc rule -a qBittorrent desktop=X 
 bspc rule -a TelegramDesktop state=floating desktop=IX 
-bspc rule -a Anki state=floating
 bspc rule -a Pixinsight state=floating
 bspc rule -a Gimp state=floating
 bspc rule -a subs2srs state=floating rectangle=1038x865+398+106
-bspc rule -a mpv state=pseudo_tiled
+bspc rule -a "*mpv" state=pseudo_tiled
 
 # Scratchpad rules
 bspc rule -a scterm sticky=on state=floating rectangle=710x360+1195+710 hidden=on
